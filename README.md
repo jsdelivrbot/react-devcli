@@ -6,9 +6,13 @@
 
 ### Installation
 
-`yarn global add react-devcli`
+```bash
+yarn global add react-devcli
+```
 
-`npm install -g react-devcli`
+```bash
+npm install -g react-devcli
+```
 
 ### React dev cli configuration (Optional)
 
