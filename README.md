@@ -1,4 +1,4 @@
-# react-cli-make
+# react-devcli
 
 ## Simple binary for creating scaffolding react components
 
