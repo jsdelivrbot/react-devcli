@@ -11,6 +11,7 @@ module.exports = () => {
         store: {},
         router: {},
         tests: {},
-        commands: {}
+        commands: {},
+        ts: false
     }
 }
