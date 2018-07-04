@@ -10,7 +10,7 @@
     "test:watch": "jest --watch",
     "build:bin": "rollup -c",
     "build:lib": "rollup -c",
-    "prepublishOnly": "yarn build && yarn test"
+    "prepublishOnly": "yarn test && yarn build:bin && yarn build:lib"
   },
   "repository": "https://github.com/steevehook/react-devcli.git",
   "author": "Steve Hook <steevehook@gmail.com>",
