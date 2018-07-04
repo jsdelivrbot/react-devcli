@@ -10,5 +10,8 @@
                 ["env"], "react"
             ]
         }
-    }
+    },
+    "plugins": [
+        "external-helpers"
+    ]
 }

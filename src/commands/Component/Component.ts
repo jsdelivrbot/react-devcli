@@ -1,9 +1,13 @@
+import fs from 'fs';
+import path from 'path';
 import {Arguments} from 'yargs';
 import ACommand from '../Command/ACommand';
 import {IMakeable} from '../Command/contracts/IMakeable';
 import {IRemovable} from '../Command/contracts/IRemovable';
 import {IServable} from '../Command/contracts/IServeable';
 import {ITestable} from '../Command/contracts/ITestable';
+import {templates} from '../../config/paths';
+import cli from '../../config/cli';
 
 class Component extends ACommand implements IRemovable, ITestable, IMakeable, IServable {
     constructor() {
@@ -17,6 +21,15 @@ class Component extends ACommand implements IRemovable, ITestable, IMakeable, IS
 
     public run(argv: Arguments): void {
         console.log(argv);
+
+        let StatelessComponent;
+
+        console.log(cli());
+
+        fs.readFile(path.resolve(templates, 'Components', 'Stateless.jsx'), (_, data) => {
+            StatelessComponent = data.toString().split('$NAME').join('SomeName');
+            console.log(StatelessComponent);
+        });
     }
 
     public help(argv: Arguments): void {

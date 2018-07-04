@@ -15,8 +15,7 @@ module.exports = () => {
             path: `${process.cwd()}/actions`,
             componentBased: false,
             index: false,
-            types: {
-            }
+            separateActionTypes: false
         },
         selectors: {
             path: `${process.cwd()}/selectors`,
@@ -33,8 +32,8 @@ module.exports = () => {
             path: `${process.cwd()}/react-devcli/templates`
         },
         engines: {
-            language: "js",
-            testing: "jest"
+            language: 'js',
+            testing: 'mocha'
         }
     };
 };

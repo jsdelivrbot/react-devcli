@@ -7,9 +7,9 @@ import tslint from 'rollup-plugin-tslint';
 
 export default {
     input: 'src/index.ts',
-    external: ['yargs', 'chalk'],
+    external: ['path', 'fs', 'yargs', 'chalk', 'find', 'dotenv'],
     output: {
-        file: 'dist/index.js',
+        file: 'bin/react-devcli.js',
         format: 'cjs',
         name: 'react-devcli'
     },
