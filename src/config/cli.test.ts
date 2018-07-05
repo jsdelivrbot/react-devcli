@@ -87,9 +87,8 @@ describe('CLI config test suite', () => {
             x: 20
         };
 
-
-        expect(() => {validate(validConfiguration as Configuration)}).not.toThrow();
-        expect(() => {validate(invalidConfiguration as Configuration)}).toThrow();
+        expect(() => {validate(validConfiguration as Configuration); }).not.toThrow();
+        expect(() => {validate(invalidConfiguration as Configuration); }).toThrow();
     });
 
     test('should merge provided configuration with default configuration', () => {

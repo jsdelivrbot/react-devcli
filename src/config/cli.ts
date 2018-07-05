@@ -137,7 +137,7 @@ export const load = () => {
                 resolve(defaultConfiguration());
             }
 
-            reject('Could not load configuration file')
+            reject('Could not load configuration file');
         });
     });
     // Todo: Load configuration
@@ -147,12 +147,12 @@ export const load = () => {
 
 export const merge = (inputConfig: Configuration): Configuration => {
     const defaultConfig = defaultConfiguration();
-    let finalConfig = {};
+    const finalConfig = {};
 
     (function recurse(defaultConfigI: Configuration, inputConfigI: Configuration, finalConfigI: Configuration) {
         if (typeof defaultConfigI === 'object') {
             // Need to walk object or array
-            for (let k of Object.keys(defaultConfigI)) {
+            for (const k of Object.keys(defaultConfigI)) {
                 // Array
                 if (typeof defaultConfigI[k] === 'object' && Array.isArray(defaultConfigI[k])) {
                     finalConfigI[k] = defaultConfigI[k].concat(inputConfigI[k] || []);
@@ -163,8 +163,8 @@ export const merge = (inputConfig: Configuration): Configuration => {
                 // Object
                 if (typeof defaultConfigI[k] === 'object' && !Array.isArray(defaultConfigI[k])) {
                     // Compare individual values between defaultConfig and inputConfig
-                    let currentConfig = {};
-                    for (let dKey of Object.keys(defaultConfigI[k])) {
+                    const currentConfig = {};
+                    for (const dKey of Object.keys(defaultConfigI[k])) {
                         const defaultVal = defaultConfigI[k][dKey];
                         const inputVal = inputConfigI[k] ? inputConfigI[k][dKey] : undefined;
                         currentConfig[dKey] = inputVal ? inputVal : defaultVal;
@@ -186,15 +186,14 @@ export const validate = (config: Configuration) => {
     (function recurse(configuration: Configuration, defaultConfig: any = defaultConfiguration()) {
         if (typeof configuration === 'object') {
             // Need to walk object or array
-            for (let key of Object.keys(configuration)) {
+            for (const key of Object.keys(configuration)) {
                 // Check if given configuration key matches one of the default configuration keys
                 if (Object.keys(defaultConfig).indexOf(key) < 0) {
                     throw new Error(
                         `Invalid configuration key: "${chalk.red.bold(key)}" for the default object: \n` +
                         `${chalk.blue(JSON.stringify(defaultConfig, undefined, 2))}`
                     );
-                }
-                else {
+                } else {
                     // Invalid type for correct key
                     if (typeof configuration[key] !== typeof defaultConfig[key]) {
                         throw new Error(

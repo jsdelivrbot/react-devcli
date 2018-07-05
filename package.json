@@ -1,6 +1,6 @@
 {
   "name": "react-devcli",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "dist/index.js",
   "bin": {
     "react": "./bin/react-devcli.js"
@@ -8,6 +8,8 @@
   "scripts": {
     "test": "jest && codecov",
     "test:watch": "jest --watch",
+    "lint": "tslint src/**/*.ts{,x}",
+    "lint:fix": "tslint --fix src/**/*.ts{,x}",
     "build:bin": "rollup -c",
     "build:lib": "rollup -c",
     "prepublishOnly": "yarn test && yarn build:bin && yarn build:lib"
