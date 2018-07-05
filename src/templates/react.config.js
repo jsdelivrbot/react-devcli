@@ -1,5 +1,8 @@
 module.exports = () => {
+    const path = `${process.cwd()}/react-devcli`;
+
     return {
+        path,
         components: {
             path: `${process.cwd()}/components`,
             propTypes: true,
@@ -27,10 +30,10 @@ module.exports = () => {
             componentBased: false
         },
         commands: {
-            path: `${process.cwd()}/react-devcli/commands`
+            path: `${path}/commands`
         },
         templates: {
-            path: `${process.cwd()}/react-devcli/templates`
+            path: `${path}/templates`
         },
         engines: {
             language: "js",

@@ -1,5 +1,5 @@
 import path from 'path';
-import {defaultConfiguration, validate, default as cli} from './cli';
+import {defaultConfiguration, validate, merge, default as cli} from './cli';
 import DoneCallback = jest.DoneCallback;
 
 describe('CLI config test suite', () => {
@@ -93,6 +93,70 @@ describe('CLI config test suite', () => {
     });
 
     test('should merge provided configuration with default configuration', () => {
-        expect(true).toBe(true);
+        const inputConfiguration = {
+            components: {
+                propTypes: true,
+                scssFile: true,
+                index: true
+            },
+            reducers: {
+                componentBased: true
+            },
+            actions: {
+                componentBased: true,
+                separateActionTypes: true
+            },
+            selectors: {
+                componentBased: true
+            },
+            tests: {
+                componentBased: true
+            },
+            commands: {
+                path: '/path/to/commands'
+            },
+            engines: {
+                language: 'ts'
+            }
+        };
+        const finalConfiguration = {
+            components: {
+                path: `${process.cwd()}/components`,
+                propTypes: true,
+                scssFile: true,
+                index: true,
+                exportFromIndex: false
+            },
+            reducers: {
+                path: `${process.cwd()}/reducers`,
+                componentBased: true
+            },
+            actions: {
+                path: `${process.cwd()}/actions`,
+                componentBased: true,
+                index: false,
+                separateActionTypes: true
+            },
+            selectors: {
+                path: `${process.cwd()}/selectors`,
+                componentBased: true
+            },
+            tests: {
+                path: `${process.cwd()}/__tests__`,
+                componentBased: true
+            },
+            commands: {
+                path: '/path/to/commands'
+            },
+            templates: {
+                path: `${process.cwd()}/react-devcli/templates`
+            },
+            engines: {
+                language: 'ts',
+                testing: 'jest'
+            }
+        };
+
+        expect(merge(inputConfiguration as Configuration)).toEqual(finalConfiguration);
     });
 });
