@@ -33,7 +33,10 @@ module.exports = () => {
         },
         engines: {
             language: 'js',
-            testing: 'jest'
+            testing: {
+            },
+            linting: {
+            }
         }
     };
 };

@@ -13,7 +13,6 @@ module.exports = {
         'jsx',
         'json'
     ],
-    collectCoverage: true,
     coverageDirectory: './coverage',
     // coverageThreshold: {
     //     global: {

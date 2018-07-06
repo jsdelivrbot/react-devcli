@@ -8,6 +8,7 @@ import {IServable} from '../Command/contracts/IServeable';
 import {ITestable} from '../Command/contracts/ITestable';
 import {templates} from '../../config/paths';
 import cli from '../../config/cli';
+import {ComponentsConfig} from 'react-devcli';
 
 class Component extends ACommand implements IRemovable, ITestable, IMakeable, IServable {
     constructor() {
@@ -19,8 +20,9 @@ class Component extends ACommand implements IRemovable, ITestable, IMakeable, IS
         super(name, description, options);
     }
 
-    public run(argv: Arguments): void {
+    public run(argv: Arguments, config: ComponentsConfig): void {
         console.log(argv);
+        console.log(config);
 
         let StatelessComponent;
 

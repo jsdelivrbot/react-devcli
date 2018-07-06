@@ -3,6 +3,7 @@ import ACommand from '../Command/ACommand';
 import {IMakeable} from '../Command/contracts/IMakeable';
 import {IRemovable} from '../Command/contracts/IRemovable';
 import {ITestable} from '../Command/contracts/ITestable';
+import {SelectorsConfig} from 'react-devcli';
 
 class Selector extends ACommand implements IRemovable, ITestable, IMakeable {
     constructor() {
@@ -14,8 +15,9 @@ class Selector extends ACommand implements IRemovable, ITestable, IMakeable {
         super(name, description, options);
     }
 
-    public run(argv: Arguments): void {
+    public run(argv: Arguments, config: SelectorsConfig): void {
         console.log(argv);
+        console.log(config);
     }
 
     public help(argv: Arguments): void {

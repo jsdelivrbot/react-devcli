@@ -2,6 +2,8 @@
 
 ## Simple react cli devtools package for boosting development in React.js
 
+Library size: 9KB
+
 ## Library coming soon, I promise ;)
 
 ### Installation

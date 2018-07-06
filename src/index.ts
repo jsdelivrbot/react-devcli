@@ -1,35 +1,34 @@
+import 'babel-polyfill';
 import {Action, Argv, Command, Component, Help, Reducer, Selector, Serve, Test} from './commands';
+import cli from './config/cli';
 
-switch (Argv._[0]) {
-    case Component.name:
-        console.log('Component');
-        Component.run(Argv);
-        break;
-    case Reducer.name:
-        console.log('Reducer');
-        Reducer.run(Argv);
-        break;
-    case Selector.name:
-        console.log('Selector');
-        Selector.run(Argv);
-        break;
-    case Action.name:
-        console.log('Action');
-        Action.run(Argv);
-        break;
-    case Test.name:
-        console.log('Test');
-        Test.run(Argv);
-        break;
-    case Command.name:
-        console.log('Command');
-        Command.run(Argv);
-        break;
-    case Serve.name:
-        console.log('Server');
-        Serve.run(Argv);
-        break;
-    default:
-        console.log('None');
-        Help.run(Argv);
-}
+(async () => {
+    const config = await cli();
+
+    switch (Argv._[0]) {
+        case Component.name:
+            Component.run(Argv, config.components as ComponentsConfig);
+            break;
+        case Reducer.name:
+            Reducer.run(Argv, config.reducers as ReducersConfig);
+            break;
+        case Selector.name:
+            Selector.run(Argv, config.selectors as SelectorsConfig);
+            break;
+        case Action.name:
+            Action.run(Argv, config.actions as ActionsConfig);
+            break;
+        case Test.name:
+            Test.run(Argv, config.tests as TestsConfig);
+            break;
+        case Command.name:
+            Command.run(Argv, config.commands as CommandsConfig);
+            break;
+        case Serve.name:
+            Serve.run(Argv, config.serve as ServeConfig);
+            break;
+        default:
+            console.log('None');
+            Help.run(Argv);
+    }
+})();

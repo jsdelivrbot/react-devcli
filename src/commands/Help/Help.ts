@@ -12,6 +12,7 @@ class Help extends ACommand {
     }
 
     public run(argv: Arguments): void {
+        console.log('Help options:');
         console.log(argv);
     }
 

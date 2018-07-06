@@ -1,5 +1,6 @@
 import {Arguments} from 'yargs';
 import {IOptions} from './contracts/IOptions';
+import {ConfigUnionType} from 'react-devcli';
 
 abstract class ACommand {
     public name: string;
@@ -14,7 +15,7 @@ abstract class ACommand {
         this.options = options;
     }
 
-    public abstract run(argv: Arguments): void;
+    public abstract run(argv: Arguments, config: ConfigUnionType): void;
 
     public abstract help(argv: Arguments): void;
 }

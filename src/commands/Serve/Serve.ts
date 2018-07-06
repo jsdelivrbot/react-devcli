@@ -1,5 +1,6 @@
 import {Arguments} from 'yargs';
 import ACommand from '../Command/ACommand';
+import {ServeConfig} from 'react-devcli';
 
 class Serve extends ACommand {
     constructor() {
@@ -11,7 +12,8 @@ class Serve extends ACommand {
         super(name, description, options);
     }
 
-    public run(argv: Arguments): void {
+    public run(argv: Arguments, config: ServeConfig): void {
+        console.log(config);
         console.log(argv);
     }
 

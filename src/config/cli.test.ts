@@ -1,6 +1,8 @@
 import path from 'path';
 import {defaultConfiguration, validate, merge, default as cli} from './cli';
 import DoneCallback = jest.DoneCallback;
+import {Configuration} from 'react-devcli';
+import expect from 'expect';
 
 describe('CLI config test suite', () => {
     test('should read correct configuration file', async (done: DoneCallback) => {
@@ -23,7 +25,7 @@ describe('CLI config test suite', () => {
         process.chdir(path.resolve(__dirname, '..', '..', '__fixtures__', 'config', 'cli', 'dir1'));
 
         const configuration = (await cli() as Configuration);
-        const expectedConfiguration: Configuration = {
+        const expectedConfiguration = {
             components: {
                 path: expect.any(String),
                 propTypes: expect.any(Boolean),
@@ -57,12 +59,14 @@ describe('CLI config test suite', () => {
             },
             engines: {
                 language: expect.any(String),
-                testing: expect.any(String)
+                testing: {
+                },
+                linting: {
+                }
             }
         };
         expect(configuration).toMatchObject(expectedConfiguration);
         expect(configuration.engines!.language).toMatch(/js|ts/);
-        expect(configuration.engines!.testing).toMatch(/(^jest$)|(^mocha$)|(^jasmine$)/);
         done();
     });
 
@@ -152,10 +156,13 @@ describe('CLI config test suite', () => {
             },
             engines: {
                 language: 'ts',
-                testing: 'jest'
+                testing: {
+                },
+                linting: {
+                }
             }
         };
 
-        expect(merge(inputConfiguration as Configuration)).toEqual(finalConfiguration);
+        expect(merge(inputConfiguration as Configuration)).toEqual(finalConfiguration as Configuration);
     });
 });

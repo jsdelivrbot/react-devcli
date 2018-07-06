@@ -32,8 +32,11 @@ module.exports = () => {
             path: `${process.cwd()}/react-devcli/templates`
         },
         engines: {
-            language: 'js',
-            testing: 'mocha'
+            language: 'ts',
+            testing: {
+            },
+            linting: {
+            }
         }
     };
 };

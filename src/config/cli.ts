@@ -1,7 +1,8 @@
 import find from 'find';
 import chalk from 'chalk';
+import {Configuration} from 'react-devcli';
 
-export const defaultConfiguration = () => ({
+export const defaultConfiguration = (): Configuration => ({
     components: {
         path: `${process.cwd()}/components`,
         propTypes: true,
@@ -35,7 +36,10 @@ export const defaultConfiguration = () => ({
     },
     engines: {
         language: 'js',
-        testing: 'jest'
+        testing: {
+        },
+        linting: {
+        }
     }
 });
 
@@ -127,7 +131,7 @@ export const defaultConfiguration = () => ({
 
 // Todo: Add configuration metadata: like required, enumerable...
 
-export const load = () => {
+export const load = (): Promise<Configuration> => {
     return new Promise((resolve, reject) => {
         find.file(/react\.config\.js$/, process.cwd(), (files) => {
             if (files.length) {
@@ -168,7 +172,10 @@ export const merge = (inputConfig: Configuration): Configuration => {
                         currentConfig[dKey] = inputVal ? inputVal : defaultVal;
                     }
 
-                    finalConfigI[k] = currentConfig;
+                    if (Object.getOwnPropertyNames(currentConfig).length) {
+                        finalConfigI[k] = currentConfig;
+                    }
+
                     recurse(defaultConfigI[k], inputConfigI[k], finalConfigI);
                 }
             }

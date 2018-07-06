@@ -7,7 +7,7 @@ import tslint from 'rollup-plugin-tslint';
 
 export default {
     input: 'src/index.ts',
-    external: ['path', 'fs', 'yargs', 'chalk', 'find', 'dotenv'],
+    external: ['path', 'fs', 'yargs', 'chalk', 'find', 'dotenv', 'babel-polyfill'],
     output: {
         file: 'bin/react-devcli.js',
         format: 'cjs',
@@ -22,5 +22,12 @@ export default {
             exclude: 'node_modules/**'
         }),
         uglify()
-    ]
+    ],
+    onwarn(warning) {
+        if (warning.code === 'THIS_IS_UNDEFINED') {
+            return;
+        }
+
+        console.warn(warning.message);
+    }
 };

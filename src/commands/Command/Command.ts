@@ -2,6 +2,7 @@ import {Arguments} from 'yargs';
 import ACommand from './ACommand';
 import {IMakeable} from './contracts/IMakeable';
 import {IRemovable} from './contracts/IRemovable';
+import {CommandsConfig} from 'react-devcli';
 
 class Command extends ACommand implements IRemovable, IMakeable {
     constructor() {
@@ -13,7 +14,8 @@ class Command extends ACommand implements IRemovable, IMakeable {
         super(name, description, options);
     }
 
-    public run(argv: Arguments): void {
+    public run(argv: Arguments, config: CommandsConfig): void {
+        console.log(config);
         console.log(argv);
     }
 
