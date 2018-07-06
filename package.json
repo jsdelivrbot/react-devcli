@@ -1,6 +1,6 @@
 {
   "name": "react-devcli",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "dist/index.js",
   "bin": {
     "react": "./bin/react-devcli.js"
@@ -15,6 +15,7 @@
     "prepublishOnly": "yarn test && yarn build:bin && yarn build:lib"
   },
   "repository": "https://github.com/steevehook/react-devcli.git",
+  "homepage": "https://github.com/steevehook/react-devcli",
   "author": "Steve Hook <steevehook@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -25,6 +26,7 @@
     "react cli"
   ],
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "chalk": "^2.4.1",
     "dotenv": "^6.0.0",
     "find": "^0.2.9",
@@ -43,7 +45,6 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
-    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "codecov": "^3.0.2",
