@@ -140,8 +140,6 @@ export const load = () => {
             reject('Could not load configuration file');
         });
     });
-    // Todo: Load configuration
-    // Todo: Add configuration merge possibility
     // Todo: Add memoization
 };
 
@@ -155,9 +153,9 @@ export const merge = (inputConfig: Configuration): Configuration => {
             for (const k of Object.keys(defaultConfigI)) {
                 // Array
                 if (typeof defaultConfigI[k] === 'object' && Array.isArray(defaultConfigI[k])) {
-                    finalConfigI[k] = defaultConfigI[k].concat(inputConfigI[k] || []);
-                    // Todo: Remove doubles from array (primitive values or array)
-                    // console.log(finalConfigI[k]);
+                    finalConfigI[k] = Array.from(
+                        new Set(defaultConfigI[k].concat(inputConfigI[k] || []))
+                    );
                 }
 
                 // Object

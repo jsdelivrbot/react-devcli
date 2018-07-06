@@ -1,6 +1,6 @@
 node_modules/
 .vscode/
 .idea/
-codecov/
+coverage/
 .rpt2_cache/
 .DS_Store
