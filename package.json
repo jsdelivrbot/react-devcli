@@ -13,7 +13,7 @@
     "prebuild:bin": "yarn lint && yarn test",
     "build:bin": "rollup -c",
     "build:lib": "tsc --help",
-    "prepublishOnly": "yarn lint && yarn test && yarn build:bin && yarn build:lib"
+    "prepublishOnly": "yarn build:bin && yarn build:lib"
   },
   "repository": "https://github.com/steevehook/react-devcli.git",
   "homepage": "https://github.com/steevehook/react-devcli",
