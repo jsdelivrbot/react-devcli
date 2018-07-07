@@ -1387,10 +1387,6 @@ domexception@^1.0.0:
   dependencies:
     webidl-conversions "^4.0.2"
 
-dotenv@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.0.0.tgz#24e37c041741c5f4b25324958ebbc34bca965935"
-
 duplexer@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
@@ -3630,13 +3626,12 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-devcli@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/react-devcli/-/react-devcli-0.0.9.tgz#b35756e3a5f1b3fd364ffe71b08ae83b1bd794ae"
+react-devcli@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/react-devcli/-/react-devcli-0.0.10.tgz#f3745cbe665496f4b2842107617276098f2049c7"
   dependencies:
     babel-polyfill "^6.26.0"
     chalk "^2.4.1"
-    dotenv "^6.0.0"
     find "^0.2.9"
     yargs "^12.0.1"
 
