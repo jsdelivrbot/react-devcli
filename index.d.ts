@@ -74,8 +74,6 @@ declare module 'react-devcli' {
         ServeConfig {
     }
 
-    // export interface X extends String, Number, Array<String|Number|Object>, Object{}
-
     export interface Configuration {
         components?: ComponentsConfig;
         reducers?: ReducersConfig;
