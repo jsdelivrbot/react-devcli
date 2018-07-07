@@ -6,7 +6,7 @@ import {ITestable} from '../Command/contracts/ITestable';
 import {SelectorsConfig} from 'react-devcli';
 
 class Selector extends ACommand implements IRemovable, ITestable, IMakeable {
-    constructor() {
+    public constructor() {
         const name = 'reducer';
         const description = 'Reducer description';
         const options = {

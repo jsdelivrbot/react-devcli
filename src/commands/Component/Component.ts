@@ -1,37 +1,48 @@
 import fs from 'fs';
 import path from 'path';
+import util from 'util';
+import chalk from 'chalk';
 import {Arguments} from 'yargs';
 import ACommand from '../Command/ACommand';
 import {IMakeable} from '../Command/contracts/IMakeable';
 import {IRemovable} from '../Command/contracts/IRemovable';
 import {IServable} from '../Command/contracts/IServeable';
 import {ITestable} from '../Command/contracts/ITestable';
-import {templates} from '../../config/paths';
-import cli from '../../config/cli';
 import {ComponentsConfig} from 'react-devcli';
 
+const readFile = util.promisify(fs.readFile);
+const writeFile = util.promisify(fs.writeFile);
+
 class Component extends ACommand implements IRemovable, ITestable, IMakeable, IServable {
-    constructor() {
+    public constructor() {
         const name = 'component';
         const description = 'Component description';
-        const options = {
-        };
+        const options = {};
 
         super(name, description, options);
     }
 
     public run(argv: Arguments, config: ComponentsConfig): void {
-        console.log(argv);
-        console.log(config);
+        console.log('Hello');
 
-        let StatelessComponent;
+        const componentName = argv._[1];
+        if (componentName) {
+            readFile(path.relative(
+                __dirname, path.resolve(__dirname, '..', 'src', 'templates', 'components', 'Stateless.jsx')
+            ))
+                .then((data: Buffer): Promise<string> => {
+                    return Promise.resolve(data.toString().split('$NAME').join('SomeName'));
+                })
+                .then(async (component: string): Promise<void> => {
+                    if (!fs.existsSync(path.resolve(config.path))) {
+                        fs.mkdirSync(path.resolve(config.path));
+                    }
 
-        console.log(cli());
-
-        fs.readFile(path.resolve(templates, 'Components', 'Stateless.jsx'), (_, data) => {
-            StatelessComponent = data.toString().split('$NAME').join('SomeName');
-            console.log(StatelessComponent);
-        });
+                    await writeFile(path.resolve(config.path, `${componentName}.jsx`), component);
+                });
+        } else {
+            console.log(chalk.red('Specify a component name!'));
+        }
     }
 
     public help(argv: Arguments): void {

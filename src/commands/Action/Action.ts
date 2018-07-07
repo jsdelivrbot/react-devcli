@@ -6,7 +6,7 @@ import {ITestable} from '../Command/contracts/ITestable';
 import {ActionsConfig} from 'react-devcli';
 
 class Action extends ACommand implements IRemovable, ITestable, IMakeable {
-    constructor() {
+    public constructor() {
         const name = 'action';
         const description = 'Action description';
         const options = {

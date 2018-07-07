@@ -6,7 +6,7 @@ import {ITestable} from '../Command/contracts/ITestable';
 import {TestsConfig} from 'react-devcli';
 
 class Test extends ACommand implements IRemovable, ITestable, IMakeable {
-    constructor() {
+    public constructor() {
         const name = 'test';
         const description = 'Test description';
         const options = {

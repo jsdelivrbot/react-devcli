@@ -36,10 +36,8 @@ export const defaultConfiguration = (): Configuration => ({
     },
     engines: {
         language: 'js',
-        testing: {
-        },
-        linting: {
-        }
+        testing: {},
+        linting: {}
     }
 });
 
@@ -132,8 +130,8 @@ export const defaultConfiguration = (): Configuration => ({
 // Todo: Add configuration metadata: like required, enumerable...
 
 export const load = (): Promise<Configuration> => {
-    return new Promise((resolve, reject) => {
-        find.file(/react\.config\.js$/, process.cwd(), (files) => {
+    return new Promise((resolve, reject): void => {
+        find.file(/react\.config\.js$/, process.cwd(), (files): void => {
             if (files.length) {
                 const path = files[files.length - 1];
                 resolve(require(path)());
@@ -151,7 +149,7 @@ export const merge = (inputConfig: Configuration): Configuration => {
     const defaultConfig = defaultConfiguration();
     const finalConfig = {};
 
-    (function recurse(defaultConfigI: Configuration, inputConfigI: Configuration, finalConfigI: Configuration) {
+    (function recurse(defaultConfigI: Configuration, inputConfigI: Configuration, finalConfigI: Configuration): void {
         if (typeof defaultConfigI === 'object') {
             // Need to walk object or array
             for (const k of Object.keys(defaultConfigI)) {
@@ -185,10 +183,10 @@ export const merge = (inputConfig: Configuration): Configuration => {
     return finalConfig;
 };
 
-export const validate = (config: Configuration) => {
+export const validate = (config: Configuration): void => {
     // Todo: Add enum checks like for engines
 
-    (function recurse(configuration: Configuration, defaultConfig: any = defaultConfiguration()) {
+    (function recurse(configuration: Configuration, defaultConfig: Configuration = defaultConfiguration()): void {
         if (typeof configuration === 'object') {
             // Need to walk object or array
             for (const key of Object.keys(configuration)) {
@@ -210,9 +208,11 @@ export const validate = (config: Configuration) => {
 
                     // Array
                     if (typeof configuration[key] === 'object' && Array.isArray(configuration[key])) {
-                        configuration[key].forEach((item: any, i: number) => {
-                            recurse(item, defaultConfig[key][i]);
-                        });
+                        configuration[key].forEach(
+                            (item: any, i: number): void => {
+                                recurse(item as Configuration, defaultConfig[key][i]);
+                            }
+                        );
                     }
 
                     // Object

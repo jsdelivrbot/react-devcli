@@ -8,11 +8,12 @@
   "scripts": {
     "test": "jest --coverage && codecov",
     "test:watch": "jest --watch",
-    "lint": "tslint src/**/*.ts{,x}",
-    "lint:fix": "tslint --fix src/**/*.ts{,x}",
+    "lint": "eslint --ext js,ts ./src",
+    "lint:fix": "eslint --ext js,ts --fix ./src",
+    "prebuild:bin": "yarn lint && yarn test",
     "build:bin": "rollup -c",
-    "build:lib": "rollup -c",
-    "prepublishOnly": "yarn test && yarn build:bin && yarn build:lib"
+    "build:lib": "tsc --help",
+    "prepublishOnly": "yarn lint:bin && yarn test && yarn build:bin && yarn build:lib"
   },
   "repository": "https://github.com/steevehook/react-devcli.git",
   "homepage": "https://github.com/steevehook/react-devcli",
@@ -28,7 +29,6 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "chalk": "^2.4.1",
-    "dotenv": "^6.0.0",
     "find": "^0.2.9",
     "yargs": "^12.0.1"
   },
@@ -38,27 +38,30 @@
     "@types/expect": "^1.20.3",
     "@types/find": "^0.2.0",
     "@types/jasmine": "^2.8.8",
-    "@types/jest": "^23.1.2",
+    "@types/jest": "^23.1.4",
     "@types/mocha": "^5.2.4",
-    "@types/node": "^10.3.6",
+    "@types/node": "^10.5.2",
     "@types/yargs": "^11.0.0",
-    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "codecov": "^3.0.2",
-    "jest": "^23.2.0",
-    "react-devcli": "^0.0.7",
+    "codecov": "^3.0.3",
+    "eslint": "^5.0.1",
+    "eslint-plugin-prefer-object-spread": "^1.2.1",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-typescript": "^0.12.0",
+    "jest": "^23.3.0",
+    "react-devcli": "^0.0.9",
     "rollup": "^0.62.0",
     "rollup-plugin-babel": "^3.0.5",
     "rollup-plugin-commonjs": "^9.1.3",
     "rollup-plugin-shebang": "^0.1.5",
-    "rollup-plugin-tslint": "^0.1.34",
     "rollup-plugin-typescript2": "^0.15.1",
     "rollup-plugin-uglify": "^4.0.0",
     "ts-jest": "^23.0.0",
     "tslint": "^5.10.0",
-    "typescript": "^2.9.2"
+    "typescript": "^2.9.2",
+    "typescript-eslint-parser": "^16.0.1"
   }
 }

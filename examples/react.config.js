@@ -8,37 +8,37 @@ module.exports = () => {
             propTypes: true,
             scssFile: true,
             index: false,
-            exportFromIndex: false,
+            exportFromIndex: false
         },
         reducers: {
             path: `${process.cwd()}/reducers`,
-            componentBased: false,
+            componentBased: false
         },
         actions: {
             path: `${process.cwd()}/actions`,
             componentBased: false,
             index: false,
             types: {
-            },
+            }
         },
         selectors: {
             path: `${process.cwd()}/selectors`,
-            componentBased: false,
+            componentBased: false
         },
         tests: {
             path: `${process.cwd()}/__tests__`,
-            componentBased: false,
+            componentBased: false
         },
         commands: {
-            path: `${path}/commands`,
+            path: `${path}/commands`
         },
         templates: {
-            path: `${path}/templates`,
+            path: `${path}/templates`
         },
         engines: {
-            language: 'js',
+            language: "js",
             testing: {},
-            linting: {},
+            linting: {}
         }
     };
 };

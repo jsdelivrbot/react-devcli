@@ -3,7 +3,7 @@ import ACommand from '../Command/ACommand';
 import {ServeConfig} from 'react-devcli';
 
 class Serve extends ACommand {
-    constructor() {
+    public constructor() {
         const name = 'server';
         const description = 'Serve description';
         const options = {

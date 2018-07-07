@@ -1,8 +1,17 @@
 import 'babel-polyfill';
 import {Action, Argv, Command, Component, Help, Reducer, Selector, Serve, Test} from './commands';
 import cli from './config/cli';
+import {
+    ActionsConfig,
+    CommandsConfig,
+    ComponentsConfig,
+    ReducersConfig,
+    SelectorsConfig,
+    ServeConfig,
+    TestsConfig
+} from 'react-devcli';
 
-(async () => {
+(async (): Promise<void> => {
     const config = await cli();
 
     switch (Argv._[0]) {

@@ -4,8 +4,8 @@ import DoneCallback = jest.DoneCallback;
 import {Configuration} from 'react-devcli';
 import expect from 'expect';
 
-describe('CLI config test suite', () => {
-    test('should read correct configuration file', async (done: DoneCallback) => {
+describe('CLI config test suite', (): void => {
+    test('should read correct configuration file', async (done: DoneCallback): Promise<void> => {
         process.chdir(path.resolve(__dirname, '..', '..', '__fixtures__', 'config', 'cli'));
 
         const configuration = await cli();
@@ -13,64 +13,68 @@ describe('CLI config test suite', () => {
         done();
     });
 
-    test('should fall back to default configuration if no configuration is provided', async (done: DoneCallback) => {
-        process.chdir(path.resolve(__dirname, '..', '..', '__fixtures__', 'config', 'cli', 'no-config'));
+    test(
+        'should fall back to default configuration if no configuration is provided',
+        async (done: DoneCallback): Promise<void> => {
+            process.chdir(path.resolve(__dirname, '..', '..', '__fixtures__', 'config', 'cli', 'no-config'));
 
-        const configuration = await cli();
-        expect(configuration).toEqual(defaultConfiguration());
-        done();
-    });
+            const configuration = await cli();
+            expect(configuration).toEqual(defaultConfiguration());
+            done();
+        }
+    );
 
-    test('should make sure configuration file matches the API schema', async (done: DoneCallback) => {
-        process.chdir(path.resolve(__dirname, '..', '..', '__fixtures__', 'config', 'cli', 'dir1'));
+    test(
+        'should make sure configuration file matches the API schema',
+        async (done: DoneCallback): Promise<void> => {
+            process.chdir(path.resolve(__dirname, '..', '..', '__fixtures__', 'config', 'cli', 'dir1'));
 
-        const configuration = (await cli() as Configuration);
-        const expectedConfiguration = {
-            components: {
-                path: expect.any(String),
-                propTypes: expect.any(Boolean),
-                scssFile: expect.any(Boolean),
-                index: expect.any(Boolean),
-                exportFromIndex: expect.any(Boolean)
-            },
-            reducers: {
-                path: expect.any(String),
-                componentBased: expect.any(Boolean)
-            },
-            actions: {
-                path: expect.any(String),
-                componentBased: expect.any(Boolean),
-                index: expect.any(Boolean),
-                separateActionTypes: expect.any(Boolean)
-            },
-            selectors: {
-                path: expect.any(String),
-                componentBased: expect.any(Boolean)
-            },
-            tests: {
-                path: expect.any(String),
-                componentBased: expect.any(Boolean)
-            },
-            commands: {
-                path: expect.any(String)
-            },
-            templates: {
-                path: expect.any(String)
-            },
-            engines: {
-                language: expect.any(String),
-                testing: {
+            const configuration = (await cli() as Configuration);
+            const expectedConfiguration = {
+                components: {
+                    path: expect.any(String),
+                    propTypes: expect.any(Boolean),
+                    scssFile: expect.any(Boolean),
+                    index: expect.any(Boolean),
+                    exportFromIndex: expect.any(Boolean)
                 },
-                linting: {
+                reducers: {
+                    path: expect.any(String),
+                    componentBased: expect.any(Boolean)
+                },
+                actions: {
+                    path: expect.any(String),
+                    componentBased: expect.any(Boolean),
+                    index: expect.any(Boolean),
+                    separateActionTypes: expect.any(Boolean)
+                },
+                selectors: {
+                    path: expect.any(String),
+                    componentBased: expect.any(Boolean)
+                },
+                tests: {
+                    path: expect.any(String),
+                    componentBased: expect.any(Boolean)
+                },
+                commands: {
+                    path: expect.any(String)
+                },
+                templates: {
+                    path: expect.any(String)
+                },
+                engines: {
+                    language: expect.any(String),
+                    testing: {},
+                    linting: {}
                 }
-            }
-        };
-        expect(configuration).toMatchObject(expectedConfiguration);
-        expect(configuration.engines!.language).toMatch(/js|ts/);
-        done();
-    });
+            };
+            expect(configuration).toMatchObject(expectedConfiguration);
+            expect(configuration.engines!.language).toMatch(/js|ts/);
+            done();
+        }
+    );
 
-    test('should validate configuration against API schema', () => {
+    test('should validate configuration against API schema', (): void => {
         const validConfiguration = {
             selectors: {
                 path: `${process.cwd()}/selectors`,
@@ -91,11 +95,15 @@ describe('CLI config test suite', () => {
             x: 20
         };
 
-        expect(() => {validate(validConfiguration as Configuration); }).not.toThrow();
-        expect(() => {validate(invalidConfiguration as Configuration); }).toThrow();
+        expect((): void => {
+            validate(validConfiguration as Configuration);
+        }).not.toThrow();
+        expect((): void => {
+            validate(invalidConfiguration as Configuration);
+        }).toThrow();
     });
 
-    test('should merge provided configuration with default configuration', () => {
+    test('should merge provided configuration with default configuration', (): void => {
         const inputConfiguration = {
             components: {
                 propTypes: true,
@@ -156,10 +164,8 @@ describe('CLI config test suite', () => {
             },
             engines: {
                 language: 'ts',
-                testing: {
-                },
-                linting: {
-                }
+                testing: {},
+                linting: {}
             }
         };
 

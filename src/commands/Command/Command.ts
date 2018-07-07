@@ -5,7 +5,7 @@ import {IRemovable} from './contracts/IRemovable';
 import {CommandsConfig} from 'react-devcli';
 
 class Command extends ACommand implements IRemovable, IMakeable {
-    constructor() {
+    public constructor() {
         const name = 'command';
         const description = 'Command description';
         const options = {

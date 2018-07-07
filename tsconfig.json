@@ -23,6 +23,7 @@
     "preserveSymlinks": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "suppressImplicitAnyIndexErrors": true
+    "suppressImplicitAnyIndexErrors": true,
+    "pretty": true
   }
 }

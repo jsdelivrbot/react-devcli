@@ -1,5 +1,5 @@
-describe('Selector command test suite', () => {
-    test('should be true', () => {
+describe('Selector command test suite', (): void => {
+    test('should be true', (): void => {
         expect(true).toBe(true);
     });
 });

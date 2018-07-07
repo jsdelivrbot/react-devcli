@@ -3,11 +3,10 @@ import typescript from 'rollup-plugin-typescript2';
 import babel from 'rollup-plugin-babel';
 import {uglify} from 'rollup-plugin-uglify';
 import shebang from 'rollup-plugin-shebang';
-import tslint from 'rollup-plugin-tslint';
 
 export default {
     input: 'src/index.ts',
-    external: ['path', 'fs', 'yargs', 'chalk', 'find', 'dotenv', 'babel-polyfill'],
+    external: ['path', 'fs', 'util', 'yargs', 'chalk', 'find', 'dotenv', 'babel-polyfill'],
     output: {
         file: 'bin/react-devcli.js',
         format: 'cjs',
@@ -15,7 +14,6 @@ export default {
     },
     plugins: [
         shebang(),
-        tslint(),
         typescript(),
         commonjs(),
         babel({

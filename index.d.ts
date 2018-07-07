@@ -1,20 +1,10 @@
-declare module "react-devcli" {
-    import ProjectConfig = jest.ProjectConfig;
-    import MochaOptions = Mocha.MochaOptions;
-    import {IConfigurationFile} from 'tslint/lib/configuration';
-    import {CLIEngine} from 'eslint';
+import {IConfigurationFile} from 'tslint/lib/configuration';
+import {CLIEngine} from 'eslint';
+import ProjectConfig = jest.ProjectConfig;
+import MochaOptions = Mocha.MochaOptions;
+import {CommandsConfig, EnginesConfig, TemplatesConfig} from 'react-devcli';
 
-    type LanguageConfigType = 'js' | 'ts';
-    type ConfigUnionType =
-        ComponentsConfig
-        | ReducersConfig
-        | ActionsConfig
-        | SelectorsConfig
-        | TestsConfig
-        | CommandsConfig
-        | TemplatesConfig
-        | EnginesConfig
-        | ServeConfig;
+declare module 'react-devcli' {
 
     export interface ComponentsConfig {
         path: string;
@@ -55,7 +45,7 @@ declare module "react-devcli" {
     }
 
     export interface EnginesConfig {
-        language?: LanguageConfigType;
+        language?: 'js' | 'ts';
         testing?: {
             jest?: ProjectConfig | string;
             mocha?: MochaOptions | string;
@@ -73,15 +63,28 @@ declare module "react-devcli" {
         // integrate with webpack
     }
 
+    export interface ConfigUnion extends ComponentsConfig,
+        ReducersConfig,
+        ActionsConfig,
+        SelectorsConfig,
+        TestsConfig,
+        CommandsConfig,
+        TemplatesConfig,
+        EnginesConfig,
+        ServeConfig {
+    }
+
+    // export interface X extends String, Number, Array<String|Number|Object>, Object{}
+
     export interface Configuration {
-        components?: ComponentsConfig,
-        reducers?: ReducersConfig,
-        actions?: ActionsConfig,
-        selectors?: SelectorsConfig,
-        tests?: TestsConfig,
-        commands?: CommandsConfig,
-        templates?: TemplatesConfig,
-        engines?: EnginesConfig,
-        serve?: ServeConfig
+        components?: ComponentsConfig;
+        reducers?: ReducersConfig;
+        actions?: ActionsConfig;
+        selectors?: SelectorsConfig;
+        tests?: TestsConfig;
+        commands?: CommandsConfig;
+        templates?: TemplatesConfig;
+        engines?: EnginesConfig;
+        serve?: ServeConfig;
     }
 }

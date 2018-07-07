@@ -1,5 +1,5 @@
-describe('Command command test suite', () => {
-    test('should be true', () => {
+describe('Command command test suite', (): void => {
+    test('should be true', (): void => {
         expect(true).toBe(true);
     });
 });

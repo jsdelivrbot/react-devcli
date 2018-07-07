@@ -2,7 +2,7 @@ import {Arguments} from 'yargs';
 import ACommand from '../Command/ACommand';
 
 class Help extends ACommand {
-    constructor() {
+    public constructor() {
         const name = 'help';
         const description = 'Help description';
         const options = {
