@@ -1,8 +1,7 @@
 import {Arguments} from 'yargs';
 import ACommand from '../Command/ACommand';
 import {CommandsConfig} from 'react-devcli';
-import {IRemovable} from '../Command/contracts/IRemovable';
-import {IMakeable} from '../Command/contracts/IMakeable';
+import {IMakeable, IRemovable} from '../Command/contracts/ISubCommands';
 
 class Router extends ACommand implements IRemovable, IMakeable {
     public constructor() {

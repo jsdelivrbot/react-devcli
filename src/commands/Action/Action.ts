@@ -1,9 +1,7 @@
 import {Arguments} from 'yargs';
 import ACommand from '../Command/ACommand';
-import {IMakeable} from '../Command/contracts/IMakeable';
-import {IRemovable} from '../Command/contracts/IRemovable';
-import {ITestable} from '../Command/contracts/ITestable';
 import {ActionsConfig} from 'react-devcli';
+import {IMakeable, IRemovable, ITestable} from '../Command/contracts/ISubCommands';
 
 class Action extends ACommand implements IRemovable, ITestable, IMakeable {
     public constructor() {

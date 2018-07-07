@@ -1,21 +1,20 @@
 import {Arguments} from 'yargs';
 import ACommand from '../Command/ACommand';
+import {CommandsConfig} from 'react-devcli';
 import {IMakeable, IRemovable} from '../Command/contracts/ISubCommands';
-import {TestsConfig} from 'react-devcli';
 
-class Test extends ACommand implements IRemovable, IMakeable {
+class Document extends ACommand implements IRemovable, IMakeable {
     public constructor() {
-        const name = 'test';
-        const description = 'Test description';
-        const options = {
-        };
+        const name = 'document';
+        const description = 'document description';
+        const options = {};
 
         super(name, description, options);
     }
 
-    public run(argv: Arguments, config: TestsConfig): void {
-        console.log(argv);
+    public run(argv: Arguments, config: CommandsConfig): void {
         console.log(config);
+        console.log(argv);
     }
 
     public help(argv: Arguments): void {
@@ -31,4 +30,4 @@ class Test extends ACommand implements IRemovable, IMakeable {
     }
 }
 
-export default new Test();
+export default new Document();

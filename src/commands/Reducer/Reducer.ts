@@ -1,8 +1,6 @@
 import {Arguments} from 'yargs';
 import ACommand from '../Command/ACommand';
-import {IMakeable} from '../Command/contracts/IMakeable';
-import {IRemovable} from '../Command/contracts/IRemovable';
-import {ITestable} from '../Command/contracts/ITestable';
+import {IMakeable, IRemovable, ITestable} from '../Command/contracts/ISubCommands';
 import {ReducersConfig} from 'react-devcli';
 
 class Reducer extends ACommand implements IRemovable, ITestable, IMakeable {

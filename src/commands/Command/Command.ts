@@ -1,7 +1,6 @@
 import {Arguments} from 'yargs';
 import ACommand from './ACommand';
-import {IMakeable} from './contracts/IMakeable';
-import {IRemovable} from './contracts/IRemovable';
+import {IMakeable, IRemovable} from './contracts/ISubCommands';
 import {CommandsConfig} from 'react-devcli';
 
 class Command extends ACommand implements IRemovable, IMakeable {

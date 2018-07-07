@@ -1,13 +1,11 @@
 import {Arguments} from 'yargs';
 import ACommand from '../Command/ACommand';
 import {CommandsConfig} from 'react-devcli';
-import {IRemovable} from '../Command/contracts/IRemovable';
-import {IMakeable} from '../Command/contracts/IMakeable';
 
-class Doc extends ACommand implements IRemovable, IMakeable {
+class Lint extends ACommand {
     public constructor() {
-        const name = 'doc';
-        const description = 'doc description';
+        const name = 'lint';
+        const description = 'lint description';
         const options = {};
 
         super(name, description, options);
@@ -21,14 +19,6 @@ class Doc extends ACommand implements IRemovable, IMakeable {
     public help(argv: Arguments): void {
         console.log(argv);
     }
-
-    public remove(argv: Arguments): void {
-        console.log(argv);
-    }
-
-    public make(argv: Arguments): void {
-        console.log(argv);
-    }
 }
 
-export default new Doc();
+export default new Lint();

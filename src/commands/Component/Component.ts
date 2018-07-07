@@ -4,16 +4,14 @@ import util from 'util';
 import chalk from 'chalk';
 import {Arguments} from 'yargs';
 import ACommand from '../Command/ACommand';
-import {IMakeable} from '../Command/contracts/IMakeable';
-import {IRemovable} from '../Command/contracts/IRemovable';
-import {IServable} from '../Command/contracts/IServeable';
-import {ITestable} from '../Command/contracts/ITestable';
+import {IDocumentable, IMakeable, IRemovable, IServable, ITestable} from '../Command/contracts/ISubCommands';
 import {ComponentsConfig} from 'react-devcli';
+import Dispatcher from '../../core/Dispatcher/Dispatcher';
 
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
-class Component extends ACommand implements IRemovable, ITestable, IMakeable, IServable {
+class Component extends ACommand implements IRemovable, ITestable, IMakeable, IServable, IDocumentable {
     public constructor() {
         const name = 'component';
         const description = 'Component description';
@@ -23,9 +21,10 @@ class Component extends ACommand implements IRemovable, ITestable, IMakeable, IS
     }
 
     public run(argv: Arguments, config: ComponentsConfig): void {
-        console.log('Hello');
+        Dispatcher.dispatch(argv, this);
 
         const componentName = argv._[1];
+
         if (componentName) {
             readFile(path.relative(
                 __dirname, path.resolve(__dirname, '..', 'src', 'templates', 'components', 'Stateless.jsx')
@@ -59,9 +58,14 @@ class Component extends ACommand implements IRemovable, ITestable, IMakeable, IS
 
     public make(argv: Arguments): void {
         console.log(argv);
+        console.log('making');
     }
 
     public serve(argv: Arguments): void {
+        console.log(argv);
+    }
+
+    public document(argv: Arguments): void {
         console.log(argv);
     }
 }
