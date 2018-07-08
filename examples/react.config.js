@@ -30,7 +30,7 @@ module.exports = () => {
             componentBased: false
         },
         commands: {
-            path: `${path}/commands`
+            path: `${path}/Commands`
         },
         templates: {
             path: `${path}/templates`

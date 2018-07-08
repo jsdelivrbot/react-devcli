@@ -1,13 +1,13 @@
 {
   "name": "react-devcli",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "dist/index.js",
   "bin": {
     "react": "./bin/react-devcli.js"
   },
   "scripts": {
     "test": "jest --coverage && codecov",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --watch --no-cache",
     "lint": "eslint --ext js,ts ./src",
     "lint:fix": "eslint --ext js,ts --fix ./src",
     "prebuild:bin": "yarn lint && yarn test",

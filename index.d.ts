@@ -5,6 +5,9 @@ import MochaOptions = Mocha.MochaOptions;
 import {CommandsConfig, EnginesConfig, TemplatesConfig} from 'react-devcli';
 
 declare module 'react-devcli' {
+    export interface RouterConfig {
+        path: string;
+    }
 
     export interface ComponentsConfig {
         path: string;
@@ -12,6 +15,10 @@ declare module 'react-devcli' {
         scssFile: boolean;
         index: boolean;
         exportFromIndex: boolean;
+    }
+
+    export interface StoreConfig {
+        path: string;
     }
 
     export interface ReducersConfig {
@@ -40,8 +47,13 @@ declare module 'react-devcli' {
         path: string;
     }
 
+    export interface DocumentationConfig {
+        path: string;
+    }
+
     export interface TemplatesConfig {
         path: string;
+        // language: 'js' | 'ts';
     }
 
     export interface EnginesConfig {
@@ -63,6 +75,10 @@ declare module 'react-devcli' {
         // integrate with webpack
     }
 
+    export interface ContextConfig {
+        path: string;
+    }
+
     export interface ConfigUnion extends ComponentsConfig,
         ReducersConfig,
         ActionsConfig,
@@ -71,7 +87,8 @@ declare module 'react-devcli' {
         CommandsConfig,
         TemplatesConfig,
         EnginesConfig,
-        ServeConfig {
+        ServeConfig,
+        ContextConfig {
     }
 
     export interface Configuration {
@@ -85,6 +102,6 @@ declare module 'react-devcli' {
         engines?: EnginesConfig;
         serve?: ServeConfig;
     }
-    
+
     // Todo: Add API for class which will be exported in lib
 }
