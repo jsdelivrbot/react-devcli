@@ -1,3 +1,3 @@
 import Help from './Help';
 
-export default Help;
+export default new Help();

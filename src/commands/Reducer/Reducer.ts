@@ -35,4 +35,4 @@ class Reducer extends ACommand implements IRemovable, ITestable, IMakeable {
     }
 }
 
-export default new Reducer();
+export default Reducer;

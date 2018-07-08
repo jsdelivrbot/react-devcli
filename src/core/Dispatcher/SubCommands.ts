@@ -1,3 +1,5 @@
+// Todo: Reorganize the names here, use something more generic instead of SubCommandsEnum...
+
 export enum SubCommandsEnum {
     Make = 'make',
     Remove = 'remove',

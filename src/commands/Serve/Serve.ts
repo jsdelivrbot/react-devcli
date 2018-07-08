@@ -22,4 +22,4 @@ class Serve extends ACommand {
     }
 }
 
-export default new Serve();
+export default Serve;

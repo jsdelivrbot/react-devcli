@@ -21,4 +21,4 @@ class New extends ACommand {
     }
 }
 
-export default new New();
+export default New;

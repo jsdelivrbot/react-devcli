@@ -40,4 +40,4 @@ class Action extends ACommand implements IRemovable, ITestable, IMakeable {
     }
 }
 
-export default new Action();
+export default Action;

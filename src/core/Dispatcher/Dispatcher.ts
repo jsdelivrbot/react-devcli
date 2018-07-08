@@ -66,27 +66,27 @@ class Dispatcher {
         }
     }
 
-    public static throwMemberInExistence(member: string): never {
+    private static throwMemberInExistence(member: string): never {
         throw new Error(`${member} does not exist on current command class`);
     }
 
-    public static hasMake(command: any): command is IMakeable {
+    private static hasMake(command: any): command is IMakeable {
         return SubCommandsEnum.Make in (command as IMakeable);
     }
 
-    public static hasRemove(command: any): command is IRemovable {
+    private static hasRemove(command: any): command is IRemovable {
         return SubCommandsEnum.Remove in (command as IRemovable);
     }
 
-    public static hasDocument(command: any): command is IDocumentable {
+    private static hasDocument(command: any): command is IDocumentable {
         return SubCommandsEnum.Document in (command as IDocumentable);
     }
 
-    public static hasServe(command: any): command is IServable {
+    private static hasServe(command: any): command is IServable {
         return SubCommandsEnum.Serve in (command as IServable);
     }
 
-    public static hasTest(command: any): command is ITestable {
+    private static hasTest(command: any): command is ITestable {
         return SubCommandsEnum.Test in (command as ITestable);
     }
 }

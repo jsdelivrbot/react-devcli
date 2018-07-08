@@ -30,4 +30,4 @@ class Router extends ACommand implements IRemovable, IMakeable {
     }
 }
 
-export default new Router();
+export default Router;

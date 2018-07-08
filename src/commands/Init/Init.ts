@@ -21,4 +21,4 @@ class Init extends ACommand {
     }
 }
 
-export default new Init();
+export default Init;

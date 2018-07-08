@@ -31,4 +31,4 @@ class Command extends ACommand implements IRemovable, IMakeable {
     }
 }
 
-export default new Command();
+export default Command;

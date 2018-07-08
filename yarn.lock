@@ -3626,9 +3626,9 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-devcli@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/react-devcli/-/react-devcli-0.0.10.tgz#f3745cbe665496f4b2842107617276098f2049c7"
+react-devcli@^0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/react-devcli/-/react-devcli-0.0.11.tgz#9583209e7e6948e5ba1ae5aadcac8205e8b7aa48"
   dependencies:
     babel-polyfill "^6.26.0"
     chalk "^2.4.1"

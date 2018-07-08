@@ -85,4 +85,6 @@ declare module 'react-devcli' {
         engines?: EnginesConfig;
         serve?: ServeConfig;
     }
+    
+    // Todo: Add API for class which will be exported in lib
 }

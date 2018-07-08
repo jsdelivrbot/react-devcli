@@ -30,4 +30,4 @@ class Document extends ACommand implements IRemovable, IMakeable {
     }
 }
 
-export default new Document();
+export default Document;

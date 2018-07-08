@@ -1,3 +1,3 @@
 import Reducer from './Reducer';
 
-export default Reducer;
+export default new Reducer();

@@ -1,3 +1,3 @@
 import Serve from './Serve';
 
-export default Serve;
+export default new Serve();

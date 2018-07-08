@@ -35,4 +35,4 @@ class Selector extends ACommand implements IRemovable, ITestable, IMakeable {
     }
 }
 
-export default new Selector();
+export default Selector;

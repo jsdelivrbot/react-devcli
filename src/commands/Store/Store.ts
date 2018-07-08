@@ -30,4 +30,4 @@ class Store extends ACommand implements IRemovable, IMakeable {
     }
 }
 
-export default new Store();
+export default Store;

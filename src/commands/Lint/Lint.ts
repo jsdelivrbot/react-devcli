@@ -21,4 +21,4 @@ class Lint extends ACommand {
     }
 }
 
-export default new Lint();
+export default Lint;

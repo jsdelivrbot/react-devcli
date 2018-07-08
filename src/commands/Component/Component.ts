@@ -70,4 +70,4 @@ class Component extends ACommand implements IRemovable, ITestable, IMakeable, IS
     }
 }
 
-export default new Component();
+export default Component;

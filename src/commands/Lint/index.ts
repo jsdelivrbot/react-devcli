@@ -1,3 +1,3 @@
 import Lint from './Lint';
 
-export default Lint;
+export default new Lint();

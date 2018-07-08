@@ -31,4 +31,4 @@ class Test extends ACommand implements IRemovable, IMakeable {
     }
 }
 
-export default new Test();
+export default Test;

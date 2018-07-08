@@ -21,4 +21,4 @@ class Help extends ACommand {
     }
 }
 
-export default new Help();
+export default Help;
