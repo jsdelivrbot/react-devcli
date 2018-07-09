@@ -1,0 +1,10 @@
+.idea/
+coverage/
+examples/
+.rpt2_cache/
+node_modules/
+.travis.yml
+.editorconfig
+.eslintrc
+.eslintignore
+TODO.md
