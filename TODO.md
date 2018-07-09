@@ -6,3 +6,4 @@
 4. Add docusaurus support
 5. Add gif demo
 6. Add memoization and caching mechanisms
+7. Simplify the docs by not being so repetitive for each command

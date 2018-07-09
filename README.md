@@ -4,9 +4,7 @@
 
 Library size: 15KB
 
-## DRAFT - Work in progress, soon 1st major version will be out
 ## Note: Current library and config is subject to change and not yet functional, so WIP
-## Coming soon however
 ### ETA: 25-30 July 2018 (First MVP)
 
 ### Installation
@@ -19,87 +17,31 @@ yarn global add react-devcli
 npm install -g react-devcli
 ```
 
-## Demo
+### Demo
 ### [GIF HERE]
 
-### Docs
-
-#### Commands
+### Commands
 
 ------------------------------------------------------------------------------------------------------------------------
-##### Initialize
+#### Initialize
 
-###### Initialize `react-devcli`
+Initialize `react-devcli`
+
+Adding the `-y` flag will generate this default configuration
 ```bash
 react init
 ```
 
-Adding the `-y` flag will generate this default configuration
-
-react.config.js
-```js
-module.exports = () => {
-    return {
-        project: {},
-        components: {
-            path: `${process.cwd()}/components`,
-            propTypes: true,
-            scssFile: true,
-            index: false,
-            exportFromIndex: false,
-            extension: 'jsx',
-            naming: {
-                PascalCase: true,
-                camelCase: false,
-                dotNotation: false
-            }
-        },
-        reducers: {
-            path: `${process.cwd()}/reducers`,
-            componentBased: false
-        },
-        actions: {
-            path: `${process.cwd()}/actions`,
-            componentBased: false,
-            index: false,
-            separateActionTypes: false
-        },
-        selectors: {
-            path: `${process.cwd()}/selectors`,
-            separateFile: true,
-            componentBased: false
-        },
-        tests: {
-            path: `${process.cwd()}/__tests__`,
-            componentBased: false
-        },
-        commands: {
-            path: `${process.cwd()}/react-devcli/commands`
-        },
-        templates: {
-            path: `${process.cwd()}/react-devcli/templates`
-        },
-        docs: {
-        },
-        engines: {
-            language: 'js',
-            testing: {},
-            linting: {}
-        }
-    }
-};
-```
-
-###### Creates a new react application called `app`, with a simple example based on `react.config.js` configuration or default configuration if none provided
+Creates a new react application called `app`, with a simple example based on `react.config.js` configuration or default configuration if none provided
 ```bash
 react new app
 ```
 ------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------
-##### Router
+#### Router
 
-###### Creates application router
+Creates application router
 ```bash
 react router make
 react component mk
@@ -108,19 +50,20 @@ react component mk
 // Add generated router
 ```
 
-###### Removes application router
+Removes application router
 Note: it prompts to prevent accidental removal
+
 ```bash
 react router remove
 react component rm
 ```
 
-###### Adds `HomePage` component route
+Adds `HomePage` component route
 ```bash
 react router add `HomePage`
 ```
 
-###### Removes `HomePage` component route from application router
+Removes `HomePage` component route from application router
 ```bash
 react router remove HomePage
 react router rm HomePage
@@ -133,9 +76,9 @@ react router rm HomePage
 ------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------
-##### Components
+#### Components
 
-###### Creates `Home` component
+Creates `Home` component
 ```bash
 react component make Home
 react component mk Home
@@ -144,38 +87,38 @@ react component mk Home
 // Add generated component
 ```
 
-###### Removes `Home` component
+Removes `Home` component
 ```bash
 react component remove Home
 react component rm Home
 ```
 
-###### Lints `Home` component, based on provided configuration, or default one
+Lints `Home` component, based on provided configuration, or default one
 ```bash
 react component lint Home
 ```
 
-###### Runs tests for `Home` component
+Runs tests for `Home` component
 ```bash
 react component test Home
 ```
 
-###### Creates documentation for `Home` component
+Creates documentation for `Home` component
 ```bash
 react component document Home
 react component doc Home
 ```
 
-###### Serves `Home` component inside a new browser tab
+Serves `Home` component inside a new browser tab
 ```bash
 react component serve Home
 ```
 ------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------
-##### Store
+#### Store
 
-###### Creates application store
+Creates application store
 ```bash
 react store make
 react store mk
@@ -184,19 +127,19 @@ react store mk
 // Add generated store
 ```
 
-###### Removes application store
+Removes application store
 Note: it prompts to prevent accidental removal
 ```bash
 react store remove
 react store rm
 ```
 
-###### Adds `UsersReducer` reducer to the store
+Adds `UsersReducer` reducer to the store
 ```bash
 react store add `UsersReducer`
 ```
 
-###### Removes `UsersReducer` reducer from application store
+Removes `UsersReducer` reducer from application store
 ```bash
 react store remove UsersReducer
 react store rm UsersReducer
@@ -208,9 +151,9 @@ react store rm UsersReducer
 ------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------
-##### Reducers
+#### Reducers
 
-###### Creates the `Users` reducer
+Creates the `Users` reducer
 ```bash
 react reducer make Users
 react reducer mk Users
@@ -219,23 +162,23 @@ react reducer mk Users
 // Add generated reducer
 ```
 
-###### Removes the `Users` reducer
+Removes the `Users` reducer
 ```bash
 react reducer remove Users
 react reducer rn Users
 ```
 
-###### Lints the `Users` reducer
+Lints the `Users` reducer
 ```bash
 react reducer lint Users
 ```
 
-###### Runs test for `Users` reducer
+Runs test for `Users` reducer
 ```bash
 react reducer test Users
 ```
 
-###### Documents the `Users` reducer
+Documents the `Users` reducer
 ```bash
 react reducer document Users
 react reducer doc Users
@@ -243,9 +186,9 @@ react reducer doc Users
 ---
 
 ------------------------------------------------------------------------------------------------------------------------
-##### Actions
+#### Actions
 
-###### Creates the `User` actions
+Creates the `User` actions
 ```bash
 react action make User
 react action mk User
@@ -254,23 +197,23 @@ react action mk User
 // Add generated action
 ```
 
-###### Removes the `User` actions
+Removes the `User` actions
 ```bash
 react action remove User
 react action mk User
 ```
 
-###### Lints the `User` actions
+Lints the `User` actions
 ```bash
 react action lint User
 ```
 
-###### Runs the tests for the `User` actions
+Runs the tests for the `User` actions
 ```bash
 react action test User
 ```
 
-###### Documents the `User` actions
+Documents the `User` actions
 ```bash
 react action document User
 react action doc User
@@ -278,9 +221,9 @@ react action doc User
 ------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------
-##### Selectors
+#### Selectors
 
-###### Creates the `AuthenticatedUser` selector
+Creates the `AuthenticatedUser` selector
 ```bash
 react selector make AuthenticatedUser
 react selector mk AuthenticatedUser
@@ -289,32 +232,32 @@ react selector mk AuthenticatedUser
 // Add generated selector
 ```
 
-###### Removes the `AuthenticatedUser` selector
+Removes the `AuthenticatedUser` selector
 ```bash
 react selector remove AuthenticatedUser
 react action rm AuthenticatedUser
 ```
 
-###### Lints the `AuthenticatedUser` selector
+Lints the `AuthenticatedUser` selector
 ```bash
 react selector lint AuthenticatedUser
 ```
 
-###### Runs the tests for the `AuthenticatedUser` selector
+Runs the tests for the `AuthenticatedUser` selector
 ```bash
 react selector test User
 ```
 
-###### Documents the `AuthenticatedUser` selector
+Documents the `AuthenticatedUser` selector
 ```bash
 react action document AuthenticatedUser
 react action doc AuthenticatedUser
 ```
 ------------------------------------------------------------------------------------------------------------------------
 
-##### Context
+#### Context
 
-###### Creates `ThemeContext` context
+Creates `ThemeContext` context
 ```bash
 react context make ThemeContext
 react context mk ThemeContext
@@ -323,16 +266,16 @@ react context mk ThemeContext
 // Add generated context
 ```
 
-###### Removes `ThemeContext` context
+Removes `ThemeContext` context
 ```bash
 react context remove ThemeContext
 react context rm ThemeContext
 ```
 
 ------------------------------------------------------------------------------------------------------------------------
-##### Command
+#### Command
 
-###### Creates new custom `HelloWorld` command
+Creates new custom `HelloWorld` command
 ```bash
 react command make HelloWorld
 react command mk HelloWorld
@@ -341,23 +284,23 @@ react command mk HelloWorld
 // Add generated command
 ```
 
-###### Removes custom `HelloWorld` command
+Removes custom `HelloWorld` command
 ```bash
 react command remove HelloWorld
 react command rm HelloWorld
 ```
 
-###### Runs custom `HelloWorld` command
+Runs custom `HelloWorld` command
 ```bash
 react command run HelloWorld
 ```
 
-###### Lints the custom `HelloWorld` command
+Lints the custom `HelloWorld` command
 ```bash
 react command lint HelloWorld
 ```
 
-###### Runs test for the custom `HelloWorld` command
+Runs test for the custom `HelloWorld` command
 ```bash
 react command test HelloWorld
 ```
@@ -365,9 +308,9 @@ react command test HelloWorld
 ------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------
-##### Lint
+#### Lint
 
-###### Lints the whole project
+Lints the whole project
 ```bash
 react lint
 ```
@@ -375,20 +318,33 @@ react lint
 ------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------
-##### Docs
+#### Docs
 
-###### Statically serves all documented components
+Statically serves all documented components
 ```bash
 react docs
 ```
+
+Creates a empty doc file for `Home` component
+```bash
+react docs make Home
+react docs mk Home
+```
+
+Removes the doc file for `Home` component
+```bash
+react docs remove Home
+react docs rm Home
+```
+
 --coverage
 
 ------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------
-##### Serve
+#### Serve
 
-###### Statically serves all component examples
+Statically serves all component examples
 ```bash
 react serve
 ```
@@ -398,24 +354,24 @@ react serve
 ------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------
-##### Help
+#### Help
 
-###### Displays general description about each available command on `react-devcli`
+Displays general description about each available command on `react-devcli`
 ```bash
 react --help
 ```
 
-###### Displays detailed information about a specific command and its available flags with description
+Displays detailed information about a specific command and its available flags with description
 ```bash
 react [COMMAND] [SUBCOMMAND] --help
 ```
 ------------------------------------------------------------------------------------------------------------------------
 
-#### Flags
+### Flags
 
 TO BE ADDED FOR EACH COMMAND UP WHERE DECLARED
 
-#### Configuration specification
+### Configuration specification
 
 react.config.js
 ```js
