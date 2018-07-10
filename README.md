@@ -4,7 +4,7 @@
 
 #### Library size: 15KB
 
-<img src="https://github.com/steevehook/react-devcli/blob/master/logo.png" alt="react-devcli" height="80px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/52299264/logo.png" alt="react-devcli" height="80px"/>
 <br/>
 
 Note: Current library is not function and subject to change 
@@ -14,7 +14,7 @@ ETA: 25-30 July 2018 (First MVP)
 <br/>
 
 ### Demo
-![Demo](https://github.com/steevehook/react-devcli/blob/master/demo.gif)
+![Demo](https://cdn.rawgit.com/steevehook/react-devcli/52299264/demo.gif)
 
 <br/>
 <br/>
