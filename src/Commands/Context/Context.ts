@@ -1,18 +1,12 @@
 import {Arguments} from 'yargs';
 import ACommand from '../ACommand';
-import {IMakeable, IRemovable, ITestable} from '../Commands';
+import {ILintable, IMakeable, IRemovable, ITestable} from '../CommandContracts';
 import {ContextConfig} from 'react-devcli';
+import {Command} from '../CommandDecorator';
+import {description, flags, name} from './ContextOptions';
 
-class Context extends ACommand implements IRemovable, ITestable, IMakeable {
-    public constructor() {
-        const name = 'context';
-        const description = 'context description';
-        const options = {
-        };
-
-        super(name, description, options);
-    }
-
+@Command(name, description, flags)
+class Context extends ACommand implements IRemovable, ITestable, IMakeable, ILintable {
     public run(argv: Arguments, config: ContextConfig): void {
         console.log(argv);
         console.log(config);
@@ -31,6 +25,10 @@ class Context extends ACommand implements IRemovable, ITestable, IMakeable {
     }
 
     public make(argv: Arguments): void {
+        console.log(argv);
+    }
+
+    public lint(argv: Arguments): void {
         console.log(argv);
     }
 }

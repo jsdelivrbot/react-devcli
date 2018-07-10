@@ -1,35 +1,17 @@
 import fs from 'fs';
 import path from 'path';
-import util from 'util';
 import chalk from 'chalk';
 import {Arguments} from 'yargs';
 import ACommand from '../ACommand';
-import {IDocumentable, IMakeable, IRemovable, IServable, ITestable} from '../Commands';
+import {IDocumentable, ILintable, IMakeable, IRemovable, IServable, ITestable} from '../CommandContracts';
 import {ComponentsConfig} from 'react-devcli';
 import Dispatcher from '../../Dispatcher/Dispatcher';
+import {Command} from '../CommandDecorator';
+import {description, flags, name} from './ComponentOptions';
+import {readFile, writeFile} from '../../Utils/Fs';
 
-const readFile = util.promisify(fs.readFile);
-const writeFile = util.promisify(fs.writeFile);
-
-function Command<T extends { new(...args: any[]): {} }>(constructor: T): any {
-    console.log(new constructor());
-
-    return class extends constructor {
-        name = 'new property';
-        description = 'override';
-    };
-}
-
-@Command
-class Component extends ACommand implements IRemovable, ITestable, IMakeable, IServable, IDocumentable {
-    public constructor() {
-        const name = 'component';
-        const description = 'Component description';
-        const options = {};
-
-        super(name, description, options);
-    }
-
+@Command(name, description, flags)
+class Component extends ACommand implements IRemovable, ITestable, IMakeable, IServable, IDocumentable, ILintable {
     public run(argv: Arguments, config: ComponentsConfig): void {
         Dispatcher.dispatch(argv, this);
 
@@ -76,6 +58,10 @@ class Component extends ACommand implements IRemovable, ITestable, IMakeable, IS
     }
 
     public document(argv: Arguments): void {
+        console.log(argv);
+    }
+
+    public lint(argv: Arguments): void {
         console.log(argv);
     }
 }

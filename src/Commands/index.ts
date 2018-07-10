@@ -15,20 +15,6 @@ import TestCommand from './Test';
 import HelpCommand from './Help';
 
 export const Argv = yargs
-    .command(InitCommand.name, InitCommand.description, InitCommand.options)
-    .command(NewCommand.name, NewCommand.description, NewCommand.options)
-    .command(RouterCommand.name, RouterCommand.description, RouterCommand.options)
-    .command(ComponentCommand.name, ComponentCommand.description, ComponentCommand.options)
-    .command(StoreCommand.name, StoreCommand.description, StoreCommand.options)
-    .command(ReducerCommand.name, ReducerCommand.description, ReducerCommand.options)
-    .command(SelectorCommand.name, SelectorCommand.description, SelectorCommand.options)
-    .command(ActionCommand.name, ActionCommand.description, ActionCommand.options)
-    .command(ContextCommand.name, ContextCommand.description, ContextCommand.options)
-    .command(CommandCommand.name, CommandCommand.description, CommandCommand.options)
-    .command(DocsCommand.name, DocsCommand.description, DocsCommand.options)
-    .command(LintCommand.name, LintCommand.description, LintCommand.options)
-    .command(TestCommand.name, TestCommand.description, TestCommand.options)
-    .command(HelpCommand.name, HelpCommand.description, HelpCommand.options)
     .help()
     .argv;
 

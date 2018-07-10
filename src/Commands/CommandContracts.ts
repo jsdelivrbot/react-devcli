@@ -1,7 +1,7 @@
 import {Options} from 'yargs';
 import {Arguments} from 'yargs';
 
-export interface IOptions {
+export interface IFlags {
     [index: string]: Options;
 }
 

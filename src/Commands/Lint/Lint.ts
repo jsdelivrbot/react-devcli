@@ -1,16 +1,11 @@
 import {Arguments} from 'yargs';
 import ACommand from '../ACommand';
 import {EnginesConfig} from 'react-devcli';
+import {Command} from '../CommandDecorator';
+import {description, name, flags} from './LintOptions';
 
+@Command(name, description, flags)
 class Lint extends ACommand {
-    public constructor() {
-        const name = 'lint';
-        const description = 'lint description';
-        const options = {};
-
-        super(name, description, options);
-    }
-
     public run(argv: Arguments, config: EnginesConfig): void {
         console.log(config);
         console.log(argv);

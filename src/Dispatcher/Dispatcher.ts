@@ -12,7 +12,7 @@ import {
     IRemovable,
     IServable,
     ITestable
-} from '../Commands/Commands';
+} from '../Commands/CommandContracts';
 
 class Dispatcher {
     public static dispatch(argv: Arguments, command: ACommand): void {

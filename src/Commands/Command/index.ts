@@ -1,3 +1,3 @@
-import Command from './Command';
+import CustomCommand from './CustomCommand';
 
-export default new Command();
+export default new CustomCommand();

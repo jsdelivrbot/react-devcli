@@ -1,17 +1,12 @@
 import {Arguments} from 'yargs';
 import ACommand from '../ACommand';
 import {CommandsConfig} from 'react-devcli';
-import {IMakeable, IRemovable} from '../Commands';
+import {ILintable, IMakeable, IRemovable} from '../CommandContracts';
+import {Command} from '../CommandDecorator';
+import {description, flags, name} from './StoreOptions';
 
-class Store extends ACommand implements IRemovable, IMakeable {
-    public constructor() {
-        const name = 'store';
-        const description = 'store description';
-        const options = {};
-
-        super(name, description, options);
-    }
-
+@Command(name, description, flags)
+class Store extends ACommand implements IRemovable, IMakeable, ILintable {
     public run(argv: Arguments, config: CommandsConfig): void {
         console.log(config);
         console.log(argv);
@@ -26,6 +21,10 @@ class Store extends ACommand implements IRemovable, IMakeable {
     }
 
     public make(argv: Arguments): void {
+        console.log(argv);
+    }
+
+    public lint(argv: Arguments): void {
         console.log(argv);
     }
 }

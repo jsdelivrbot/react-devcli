@@ -1,18 +1,12 @@
 import {Arguments} from 'yargs';
 import ACommand from '../ACommand';
-import {IMakeable, IRemovable, ITestable} from '../Commands';
+import {ILintable, IMakeable, IRemovable, ITestable} from '../CommandContracts';
 import {SelectorsConfig} from 'react-devcli';
+import {Command} from '../CommandDecorator';
+import {description, flags, name} from './SelectorOptions';
 
-class Selector extends ACommand implements IRemovable, ITestable, IMakeable {
-    public constructor() {
-        const name = 'selector';
-        const description = 'Selector description';
-        const options = {
-        };
-
-        super(name, description, options);
-    }
-
+@Command(name, description, flags)
+class Selector extends ACommand implements IRemovable, ITestable, IMakeable, ILintable {
     public run(argv: Arguments, config: SelectorsConfig): void {
         console.log(argv);
         console.log(config);
@@ -31,6 +25,10 @@ class Selector extends ACommand implements IRemovable, ITestable, IMakeable {
     }
 
     public make(argv: Arguments): void {
+        console.log(argv);
+    }
+
+    public lint(argv: Arguments): void {
         console.log(argv);
     }
 }

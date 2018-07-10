@@ -1,4 +1,4 @@
-describe('Docs command test suite', (): void => {
+describe('CommandDecorator test suite', (): void => {
     test('should be true', (): void => {
         expect(true).toBe(true);
     });

@@ -1,18 +1,12 @@
 import {Arguments} from 'yargs';
 import ACommand from '../ACommand';
-import {IMakeable, IRemovable, ITestable} from '../Commands';
+import {ILintable, IMakeable, IRemovable, ITestable} from '../CommandContracts';
 import {ReducersConfig} from 'react-devcli';
+import {Command} from '../CommandDecorator';
+import {description, flags, name} from './ReducerOptions';
 
-class Reducer extends ACommand implements IRemovable, ITestable, IMakeable {
-    public constructor() {
-        const name = 'reducer';
-        const description = 'Reducer description';
-        const options = {
-        };
-
-        super(name, description, options);
-    }
-
+@Command(name, description, flags)
+class Reducer extends ACommand implements IRemovable, ITestable, IMakeable, ILintable {
     public run(argv: Arguments, config: ReducersConfig): void {
         console.log(argv);
         console.log(config);
@@ -31,6 +25,10 @@ class Reducer extends ACommand implements IRemovable, ITestable, IMakeable {
     }
 
     public make(argv: Arguments): void {
+        console.log(argv);
+    }
+
+    public lint(argv: Arguments): void {
         console.log(argv);
     }
 }
