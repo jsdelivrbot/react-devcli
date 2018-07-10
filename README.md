@@ -2,7 +2,7 @@
 
 ### The missing CLI tool for React developers. Simple React CLI devtools for boosting development with React.js ecosystem
 
-#### Library size: 15KB
+#### Library size: 16KB
 
 <img src="https://cdn.rawgit.com/steevehook/react-devcli/52299264/logo.png" alt="react-devcli" height="80px"/>
 <br/>
