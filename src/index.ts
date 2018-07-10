@@ -3,7 +3,7 @@ import CLI from './Config/CLI';
 import {
     Action,
     Argv,
-    Command,
+    CustomCommand,
     Component,
     Context,
     Docs,
@@ -64,8 +64,8 @@ import {
         case Context.name:
             Context.run(Argv, config.actions as ContextConfig);
             break;
-        case Command.name:
-            Command.run(Argv, config.commands as CommandsConfig);
+        case CustomCommand.name:
+            CustomCommand.run(Argv, config.commands as CommandsConfig);
             break;
         case Docs.name:
             Docs.run(Argv, config.tests as DocumentationConfig);

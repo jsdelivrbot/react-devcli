@@ -6,3 +6,6 @@
 4. Add memoization and caching mechanisms
 5. Make templates functions instead of classes
 6. Filter our declaration file of things out of lib context (out of public API)
+7. Make command aliases easier to use and get rid of classes where possible
+8. Try to simplify the big switch statement from index.ts
+9. Get rid of as many index.ts as possible

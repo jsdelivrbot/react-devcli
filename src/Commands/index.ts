@@ -1,34 +1,19 @@
 import yargs from 'yargs';
-import InitCommand from './Init';
-import NewCommand from './New';
-import RouterCommand from './Router';
-import ComponentCommand from './Component';
-import StoreCommand from './Store';
-import ReducerCommand from './Reducer';
-import SelectorCommand from './Selector';
-import ActionCommand from './Action';
-import ContextCommand from './Context';
-import CommandCommand from './Command';
-import DocsCommand from './Docs';
-import LintCommand from './Lint';
-import TestCommand from './Test';
-import HelpCommand from './Help';
 
+export {default as Init} from './Init';
+export {default as New} from './New';
+export {default as Router} from './Router';
+export {default as Component} from './Component';
+export {default as Store} from './Store';
+export {default as Reducer} from './Reducer';
+export {default as Selector} from './Selector';
+export {default as Action} from './Action';
+export {default as Context} from './Context';
+export {default as CustomCommand} from './CustomCommand';
+export {default as Docs} from './Docs';
+export {default as Lint} from './Lint';
+export {default as Test} from './Test';
+export {default as Help} from './Help';
 export const Argv = yargs
     .help()
     .argv;
-
-export const Init = InitCommand;
-export const New = NewCommand;
-export const Router = RouterCommand;
-export const Component = ComponentCommand;
-export const Store = StoreCommand;
-export const Reducer = ReducerCommand;
-export const Selector = SelectorCommand;
-export const Action = ActionCommand;
-export const Context = ContextCommand;
-export const Command = CommandCommand;
-export const Docs = DocsCommand;
-export const Lint = LintCommand;
-export const Test = TestCommand;
-export const Help = HelpCommand;

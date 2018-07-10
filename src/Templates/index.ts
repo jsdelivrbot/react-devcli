@@ -1,3 +1,13 @@
-import Templates from './Templates';
-
-export default new Templates();
+export {default as ActionTemplate} from './Action/Action';
+export {default as ActionTypes} from './ActionTypes/ActionTypes';
+export {default as Command} from './Command/Command';
+export {default as StatelessComponent} from './Components/Stateless/Stateless';
+export {default as ConnectedComponent} from './Components/Connected/Connected';
+export {default as PageComponent} from './Components/Page/Page';
+export {default as HOC} from './Components/HOC/HOC';
+export {default as Context} from './Context/Context';
+export {default as Reducer} from './Reducer/Reducer';
+export {default as Router} from './Router/Router';
+export {default as Selector} from './Selector/Selector';
+export {default as Store} from './Store/Store';
+export {default as Test} from './Test/Test';

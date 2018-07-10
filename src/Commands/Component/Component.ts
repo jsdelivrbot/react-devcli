@@ -8,7 +8,7 @@ import {ComponentsConfig} from 'react-devcli';
 import Dispatcher from '../../Dispatcher/Dispatcher';
 import {Command} from '../CommandDecorator';
 import {description, flags, name} from './ComponentOptions';
-import {readFile, writeFile} from '../../Utils/Fs';
+import {readFile, writeFile} from '../../Utils/Fs/Fs';
 
 @Command(name, description, flags)
 class Component extends ACommand implements IRemovable, ITestable, IMakeable, IServable, IDocumentable, ILintable {
