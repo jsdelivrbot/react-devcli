@@ -4,6 +4,8 @@
 
 #### Library size: 15KB
 
+![Logo](https://github.com/steevehook/react-devcli/blob/master/logo.png)
+
 Note: Current library is not function and subject to change 
 ETA: 25-30 July 2018 (First MVP)
 
@@ -33,7 +35,7 @@ npm install -g react-devcli
 # Initialize react-devcli
 # Adding the -y flag will generate this default configuration
 react init
-    # Generate react configuration file without any prompts
+    # Generates react default configuration file without any prompts
     -y
     --yes
  
@@ -248,7 +250,8 @@ react action mk User
     -s
     --selectors
     
-    # Action name to be exported inside actions file. The number of instances of this flag can be variadic
+    # Action name to be exported inside actions file.
+    # The number of instances of this flag can be variadic
     --action
  
 # Removes the User actions
@@ -283,7 +286,8 @@ react selector mk AuthenticatedUser
     # Create actions file, when creating selectors file
     --actions
     
-    # Selector name to be exported inside selectors file. The number of instances of this flag can be variadic
+    # Selector name to be exported inside selectors file.
+    # The number of instances of this flag can be variadic
     -s
     --selector
  
@@ -321,7 +325,7 @@ react context remove ThemeContext
 react context rm ThemeContext
  
 # Lints the custom HelloWorld command
-react command lint ThemeContext
+react context lint ThemeContext
     # Fix all linting errors related to actions file
     -f
     --fix
