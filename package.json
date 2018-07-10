@@ -1,6 +1,6 @@
 {
   "name": "react-devcli",
-  "version": "0.0.15",
+  "version": "0.0.17",
   "main": "dist/index.js",
   "bin": {
     "react": "./bin/react-devcli.js"

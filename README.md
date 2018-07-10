@@ -1,11 +1,20 @@
 # react-devcli
 
-## The missing CLI tool for React developers. Simple react cli devtools package for boosting development in React.js
+### The missing CLI tool for React developers. Simple React CLI devtools for boosting development with React.js ecosystem
 
 #### Library size: 15KB
 
 Note: Current library is not function and subject to change 
 ETA: 25-30 July 2018 (First MVP)
+
+<br/>
+<br/>
+
+### Demo
+##### [GIF HERE]
+
+<br/>
+<br/>
 
 ### Installation
 ```bash
@@ -16,8 +25,8 @@ yarn global add react-devcli
 npm install -g react-devcli
 ```
 
-### Demo
-### [GIF HERE]
+<br/>
+<br/>
 
 ### Initialize
 ##### Commands
@@ -30,6 +39,9 @@ react init
 react new app
 ```
 ##### Flags
+
+<br/>
+<br/>
 
 ### Router
 ##### Commands
@@ -56,6 +68,9 @@ react router rm HomePage
 --route
 --component
 
+<br/>
+<br/>
+
 ### Components
 ##### Commands
 ```bash
@@ -77,6 +92,9 @@ react component test Home
 react component serve Home
 ```
 ##### Flags
+
+<br/>
+<br/>
 
 ### Store
 ##### Commands
@@ -101,6 +119,9 @@ react store rm UsersReducer
 --actions
 --selectors
 
+<br/>
+<br/>
+
 ### Reducers
 ##### Commands
 ```bash
@@ -120,6 +141,9 @@ react reducer test Users
 ```
 ##### Flags
 
+<br/>
+<br/>
+
 #### Actions
 ##### Commands
 ```bash
@@ -138,6 +162,9 @@ react action lint User
 react action test User
 ```
 ##### Flags
+
+<br/>
+<br/>
 
 
 #### Selectors
@@ -159,6 +186,9 @@ react selector test User
 ```
 ##### Flags
 
+<br/>
+<br/>
+
 #### Context
 ##### Commands
 ```bash
@@ -171,6 +201,9 @@ react context remove ThemeContext
 react context rm ThemeContext
 ```
 ##### Flags
+
+<br/>
+<br/>
 
 #### Command
 ##### Commands
@@ -194,6 +227,9 @@ react command test HelloWorld
 ```
 ##### Flags
 
+<br/>
+<br/>
+
 #### Docs
 ##### Commands
 ```bash
@@ -210,6 +246,9 @@ react docs rm Home
 ```
 ##### Flags
 --coverage
+
+<br/>
+<br/>
 
 #### Test
 ##### Commands
@@ -231,11 +270,17 @@ react test run Home
 ##### Flags
 --coverage
 
+<br/>
+<br/>
+
 #### Lint
 ```bash
 # Lints the whole project
 react lint
 ```
+
+<br/>
+<br/>
 
 #### Help
 ```bash
@@ -245,6 +290,9 @@ react --help
 # Displays detailed information about a specific command and its available flags
 react [COMMAND] [SUBCOMMAND] --help
 ```
+
+<br/>
+<br/>
 
 ### Configuration specification
 react.config.js
