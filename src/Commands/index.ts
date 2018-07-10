@@ -9,10 +9,9 @@ import SelectorCommand from './Selector';
 import ActionCommand from './Action';
 import ContextCommand from './Context';
 import CommandCommand from './Command';
-import DocumentCommand from './Document';
+import DocsCommand from './Docs';
 import LintCommand from './Lint';
 import TestCommand from './Test';
-import ServeCommand from './Serve';
 import HelpCommand from './Help';
 
 export const Argv = yargs
@@ -26,10 +25,9 @@ export const Argv = yargs
     .command(ActionCommand.name, ActionCommand.description, ActionCommand.options)
     .command(ContextCommand.name, ContextCommand.description, ContextCommand.options)
     .command(CommandCommand.name, CommandCommand.description, CommandCommand.options)
-    .command(DocumentCommand.name, DocumentCommand.description, DocumentCommand.options)
+    .command(DocsCommand.name, DocsCommand.description, DocsCommand.options)
     .command(LintCommand.name, LintCommand.description, LintCommand.options)
     .command(TestCommand.name, TestCommand.description, TestCommand.options)
-    .command(ServeCommand.name, ServeCommand.description, ServeCommand.options)
     .command(HelpCommand.name, HelpCommand.description, HelpCommand.options)
     .help()
     .argv;
@@ -44,8 +42,7 @@ export const Selector = SelectorCommand;
 export const Action = ActionCommand;
 export const Context = ContextCommand;
 export const Command = CommandCommand;
-export const Document = DocumentCommand;
+export const Docs = DocsCommand;
 export const Lint = LintCommand;
 export const Test = TestCommand;
-export const Serve = ServeCommand;
 export const Help = HelpCommand;

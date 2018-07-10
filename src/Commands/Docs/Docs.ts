@@ -3,10 +3,10 @@ import ACommand from '../ACommand';
 import {DocumentationConfig} from 'react-devcli';
 import {IMakeable, IRemovable} from '../Commands';
 
-class Document extends ACommand implements IRemovable, IMakeable {
+class Docs extends ACommand implements IRemovable, IMakeable {
     public constructor() {
-        const name = 'document';
-        const description = 'document description';
+        const name = 'docs';
+        const description = 'docs description';
         const options = {};
 
         super(name, description, options);
@@ -30,4 +30,4 @@ class Document extends ACommand implements IRemovable, IMakeable {
     }
 }
 
-export default Document;
+export default Docs;

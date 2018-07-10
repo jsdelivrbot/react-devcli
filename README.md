@@ -2,377 +2,251 @@
 
 ## The missing CLI tool for React developers. Simple react cli devtools package for boosting development in React.js
 
-Library size: 15KB
+#### Library size: 15KB
 
-## Note: Current library and config is subject to change and not yet functional, so WIP
-### ETA: 25-30 July 2018 (First MVP)
+Note: Current library is not function and subject to change 
+ETA: 25-30 July 2018 (First MVP)
 
 ### Installation
-
 ```bash
+# YARN
 yarn global add react-devcli
-```
-
-```bash
+  
+# NPM
 npm install -g react-devcli
 ```
 
 ### Demo
 ### [GIF HERE]
 
-### Commands
-
-------------------------------------------------------------------------------------------------------------------------
-#### Initialize
-
-Initialize `react-devcli`
-
-Adding the `-y` flag will generate this default configuration
+### Initialize
+##### Commands
 ```bash
+# Initialize react-devcli
+# Adding the -y flag will generate this default configuration
 react init
-```
-
-Creates a new react application called `app`, with a simple example based on `react.config.js` configuration or default configuration if none provided
-```bash
+ 
+# Creates a new react application, with a simple example based on react.config.js configuration or default configuration if none provided
 react new app
 ```
-------------------------------------------------------------------------------------------------------------------------
+##### Flags
 
-------------------------------------------------------------------------------------------------------------------------
-#### Router
-
-Creates application router
+### Router
+##### Commands
 ```bash
+# Creates application router
 react router make
 react component mk
-```
-```jsx
-// Add generated router
-```
-
-Removes application router
-Note: it prompts to prevent accidental removal
-
-```bash
+ 
+# Removes application router
 react router remove
 react component rm
-```
-
-Adds `HomePage` component route
-```bash
-react router add `HomePage`
-```
-
-Removes `HomePage` component route from application router
-```bash
+ 
+# Adds HomePage component route 
+react router add HomePage
+ 
+# Removes HomePage component route from application router 
 react router remove HomePage
 react router rm HomePage
 ```
+
+##### Flags
 
 --exact
 --route
 --component
 
-------------------------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------------------------------
-#### Components
-
-Creates `Home` component
+### Components
+##### Commands
 ```bash
+# Creates Home component
 react component make Home
 react component mk Home
-```
-```jsx
-// Add generated component
-```
-
-Removes `Home` component
-```bash
+ 
+# Removes Home component
 react component remove Home
 react component rm Home
-```
-
-Lints `Home` component, based on provided configuration, or default one
-```bash
+ 
+# Lints Home component
 react component lint Home
-```
-
-Runs tests for `Home` component
-```bash
+ 
+# Runs tests for Home component
 react component test Home
-```
-
-Creates documentation for `Home` component
-```bash
-react component document Home
-react component doc Home
-```
-
-Serves `Home` component inside a new browser tab
-```bash
+ 
+# Serves Home component inside a new browser tab
 react component serve Home
 ```
-------------------------------------------------------------------------------------------------------------------------
+##### Flags
 
-------------------------------------------------------------------------------------------------------------------------
-#### Store
-
-Creates application store
+### Store
+##### Commands
 ```bash
+# Creates application store
 react store make
 react store mk
-```
-```js
-// Add generated store
-```
-
-Removes application store
-Note: it prompts to prevent accidental removal
-```bash
+ 
+# Removes application store
+# Note: it prompts to prevent accidental removal
 react store remove
 react store rm
-```
-
-Adds `UsersReducer` reducer to the store
-```bash
-react store add `UsersReducer`
-```
-
-Removes `UsersReducer` reducer from application store
-```bash
+ 
+# Adds UsersReducer reducer to the store
+react store add UsersReducer
+ 
+# Removes UsersReducer reducer from application store
 react store remove UsersReducer
 react store rm UsersReducer
 ```
-
+##### Flags
 --actions
 --selectors
 
-------------------------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------------------------------
-#### Reducers
-
-Creates the `Users` reducer
+### Reducers
+##### Commands
 ```bash
+# Creates the Users reducer
 react reducer make Users
 react reducer mk Users
-```
-```js
-// Add generated reducer
-```
-
-Removes the `Users` reducer
-```bash
+ 
+# Removes the Users reducer
 react reducer remove Users
 react reducer rn Users
-```
-
-Lints the `Users` reducer
-```bash
+ 
+# Lints the Users reducer
 react reducer lint Users
-```
-
-Runs test for `Users` reducer
-```bash
+ 
+# Runs test for Users reducer
 react reducer test Users
 ```
+##### Flags
 
-Documents the `Users` reducer
-```bash
-react reducer document Users
-react reducer doc Users
-```
----
-
-------------------------------------------------------------------------------------------------------------------------
 #### Actions
-
-Creates the `User` actions
+##### Commands
 ```bash
+# Creates the User actions
 react action make User
 react action mk User
-```
-```js
-// Add generated action
-```
-
-Removes the `User` actions
-```bash
+ 
+# Removes the User actions
 react action remove User
 react action mk User
-```
-
-Lints the `User` actions
-```bash
+ 
+# Lints the User actions 
 react action lint User
-```
-
-Runs the tests for the `User` actions
-```bash
+ 
+# Runs the tests for the User actions
 react action test User
 ```
+##### Flags
 
-Documents the `User` actions
-```bash
-react action document User
-react action doc User
-```
-------------------------------------------------------------------------------------------------------------------------
 
-------------------------------------------------------------------------------------------------------------------------
 #### Selectors
-
-Creates the `AuthenticatedUser` selector
+##### Commands
 ```bash
+# Creates the AuthenticatedUser selector
 react selector make AuthenticatedUser
 react selector mk AuthenticatedUser
-```
-```js
-// Add generated selector
-```
-
-Removes the `AuthenticatedUser` selector
-```bash
+ 
+# Removes the AuthenticatedUser selector
 react selector remove AuthenticatedUser
 react action rm AuthenticatedUser
-```
-
-Lints the `AuthenticatedUser` selector
-```bash
+ 
+# Lints the AuthenticatedUser selector
 react selector lint AuthenticatedUser
-```
-
-Runs the tests for the `AuthenticatedUser` selector
-```bash
+ 
+# Runs the tests for the AuthenticatedUser selector
 react selector test User
 ```
-
-Documents the `AuthenticatedUser` selector
-```bash
-react action document AuthenticatedUser
-react action doc AuthenticatedUser
-```
-------------------------------------------------------------------------------------------------------------------------
+##### Flags
 
 #### Context
-
-Creates `ThemeContext` context
+##### Commands
 ```bash
+# Creates ThemeContext context
 react context make ThemeContext
 react context mk ThemeContext
-```
-```js
-// Add generated context
-```
-
-Removes `ThemeContext` context
-```bash
+ 
+# Removes ThemeContext context
 react context remove ThemeContext
 react context rm ThemeContext
 ```
+##### Flags
 
-------------------------------------------------------------------------------------------------------------------------
 #### Command
-
-Creates new custom `HelloWorld` command
+##### Commands
 ```bash
+# Creates new custom HelloWorld command
 react command make HelloWorld
 react command mk HelloWorld
-```
-```js
-// Add generated command
-```
-
-Removes custom `HelloWorld` command
-```bash
+ 
+# Removes custom HelloWorld command
 react command remove HelloWorld
 react command rm HelloWorld
-```
-
-Runs custom `HelloWorld` command
-```bash
+ 
+# Runs custom HelloWorld command
 react command run HelloWorld
-```
-
-Lints the custom `HelloWorld` command
-```bash
+ 
+# Lints the custom HelloWorld command
 react command lint HelloWorld
-```
-
-Runs test for the custom `HelloWorld` command
-```bash
+ 
+# Runs test for the custom HelloWorld command
 react command test HelloWorld
 ```
+##### Flags
 
-------------------------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------------------------------
-#### Lint
-
-Lints the whole project
-```bash
-react lint
-```
-
-------------------------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------------------------------
 #### Docs
-
-Statically serves all documented components
+##### Commands
 ```bash
+# Statically serves all documented components
 react docs
-```
-
-Creates a empty doc file for `Home` component
-```bash
+ 
+# Creates a empty doc file for Home component
 react docs make Home
 react docs mk Home
-```
-
-Removes the doc file for `Home` component
-```bash
+ 
+# Removes the doc file for Home component
 react docs remove Home
 react docs rm Home
 ```
-
+##### Flags
 --coverage
 
-------------------------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------------------------------
-#### Serve
-
-Statically serves all component examples
+#### Test
+##### Commands
 ```bash
-react serve
+# Runs test on all application
+react test
+ 
+# Creates a test file for Home component
+react test make Home
+react test mk Home
+ 
+# Removes the test file for Home component
+react test remove Home
+react test rm Home
+ 
+# Runs the test file for Home component
+react test run Home
+```
+##### Flags
+--coverage
+
+#### Lint
+```bash
+# Lints the whole project
+react lint
 ```
 
---coverage
-
-------------------------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------------------------------
 #### Help
-
-Displays general description about each available command on `react-devcli`
 ```bash
+# Displays general description about each available command
 react --help
-```
-
-Displays detailed information about a specific command and its available flags with description
-```bash
+ 
+# Displays detailed information about a specific command and its available flags
 react [COMMAND] [SUBCOMMAND] --help
 ```
-------------------------------------------------------------------------------------------------------------------------
-
-### Flags
-
-TO BE ADDED FOR EACH COMMAND UP WHERE DECLARED
 
 ### Configuration specification
-
 react.config.js
 ```js
 module.exports = () => {

@@ -6,7 +6,7 @@ import {
     Command,
     Component,
     Context,
-    Document,
+    Docs,
     Help,
     Init,
     Lint,
@@ -14,7 +14,6 @@ import {
     Reducer,
     Router,
     Selector,
-    Serve,
     Store,
     Test
 } from './Commands';
@@ -28,7 +27,6 @@ import {
     ReducersConfig,
     RouterConfig,
     SelectorsConfig,
-    ServeConfig,
     StoreConfig,
     TestsConfig
 } from 'react-devcli';
@@ -69,17 +67,14 @@ import {
         case Command.name:
             Command.run(Argv, config.commands as CommandsConfig);
             break;
-        case Document.name:
-            Document.run(Argv, config.tests as DocumentationConfig);
+        case Docs.name:
+            Docs.run(Argv, config.tests as DocumentationConfig);
             break;
         case Lint.name:
             Lint.run(Argv, config.tests as EnginesConfig);
             break;
         case Test.name:
             Test.run(Argv, config.tests as TestsConfig);
-            break;
-        case Serve.name:
-            Serve.run(Argv, config.serve as ServeConfig);
             break;
         default:
             console.log('None');
