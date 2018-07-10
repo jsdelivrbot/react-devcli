@@ -5,6 +5,7 @@
 #### Library size: 15KB
 
 ![Logo](https://github.com/steevehook/react-devcli/blob/master/logo.png)
+<img src="https://github.com/steevehook/react-devcli/blob/master/logo.png" alt="react-devcli" height="80px"/>
 
 Note: Current library is not function and subject to change 
 ETA: 25-30 July 2018 (First MVP)
