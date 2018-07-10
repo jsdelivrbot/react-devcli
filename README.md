@@ -7,7 +7,7 @@
 <img src="https://cdn.rawgit.com/steevehook/react-devcli/52299264/logo.png" alt="react-devcli" height="80px"/>
 <br/>
 
-Note: Current library is not function and subject to change 
+Note: Current library is not functional and subject to change 
 ETA: 25-30 July 2018 (First MVP)
 
 <br/>
