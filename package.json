@@ -1,6 +1,6 @@
 {
   "name": "react-devcli",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "main": "dist/index.js",
   "bin": {
     "react": "./bin/react-devcli.js"
@@ -24,7 +24,12 @@
     "dev",
     "cli",
     "devtools",
-    "react cli"
+    "react cli",
+    "react dev",
+    "react devcli",
+    "react-development",
+    "react create",
+    "react generate"
   ],
   "dependencies": {
     "babel-polyfill": "^6.26.0",
