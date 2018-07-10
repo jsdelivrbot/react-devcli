@@ -11,6 +11,16 @@ import Dispatcher from '../../Dispatcher/Dispatcher';
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
+function Command<T extends { new(...args: any[]): {} }>(constructor: T): any {
+    console.log(new constructor());
+
+    return class extends constructor {
+        name = 'new property';
+        description = 'override';
+    };
+}
+
+@Command
 class Component extends ACommand implements IRemovable, ITestable, IMakeable, IServable, IDocumentable {
     public constructor() {
         const name = 'component';
