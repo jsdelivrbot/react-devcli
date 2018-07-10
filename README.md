@@ -325,9 +325,9 @@ react context mk ThemeContext
 react context remove ThemeContext
 react context rm ThemeContext
  
-# Lints the custom HelloWorld command
+# Lints the custom ThemeContext context
 react context lint ThemeContext
-    # Fix all linting errors related to actions file
+    # Fix all linting errors related to context file
     -f
     --fix
 ```
