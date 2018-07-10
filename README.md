@@ -40,7 +40,8 @@ react init
     -y
     --yes
  
-# Creates a new react application, with a simple example based on react.config.js configuration or default configuration if none provided
+# Creates a new react application, with a simple example based on react.config.js configuration
+# Using default configuration if none provided
 react new app
     # Only creates the directory structure without any example
     --no-example
@@ -151,11 +152,13 @@ react component test Home
  
 # Serves Home component inside a new browser tab
 react component serve Home
-    # Specify the port which should be used when serving the component, by default is 3000
+    # Specify the port which should be used when serving the component
+    # By default the port is 3000
     -p
     --port
     
-    # Specify the theme for serving the component, dark or light. By default is light
+    # Specify the theme for serving the component, dark or light.
+    # By default the theme is light
     -t
     --theme
 ```
@@ -186,7 +189,7 @@ react store add UsersReducer
     -r
     --reducer
     
-    # Specify whether or not when creating the reducer it should also create actions for it 
+    # Specify if when creating the reducer it should also create actions file 
     --actions
  
 # Removes UsersReducer reducer from application store
@@ -421,7 +424,7 @@ react lint
 # Displays general description about each available command
 react --help
  
-# Displays detailed information about a specific command and its available flags
+# Displays detailed information about a specific command and available flags
 react [COMMAND] [SUBCOMMAND] --help
 ```
 

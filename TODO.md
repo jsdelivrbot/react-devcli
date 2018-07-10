@@ -7,3 +7,4 @@
 5. Add gif demo
 6. Add memoization and caching mechanisms
 7. Simplify the docs by not being so repetitive for each command
+8. Add decorator for each individual command
