@@ -50,7 +50,12 @@
         "prefer-arrow-callback": "error",
         "no-console": "off",
         "no-undef": "off",
-        "camelcase": "error",
+        "camelcase": [
+            "error",
+            {
+                "properties": "never"
+            }
+        ],
         "typescript/adjacent-overload-signatures": "error",
         "typescript/class-name-casing": "error",
         "typescript/explicit-function-return-type": "error",

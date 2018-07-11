@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Router template test suite should match router template snapshot for JS language 1`] = `""`;
+
+exports[`Router template test suite should match router template snapshot for TS language 1`] = `""`;

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Action template test suite should match action template snapshot for JS language 1`] = `""`;
+
+exports[`Action template test suite should match action template snapshot for TS language 1`] = `""`;

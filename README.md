@@ -104,8 +104,13 @@ react router rm HomePage
 react component make Home
 react component mk Home
     # Create stateless functional component
-    -s
     --stateless
+    
+    # Create stateful functional component
+    --stateful
+    
+    # Create stateful component without constructor
+    --no-constructor
     
     # Create connected to store component
     -c
@@ -130,6 +135,11 @@ react component mk Home
     # Create markdown doc alongside component
     -d
     --doc
+    
+    # Specify language for template
+    # By default is JS, but TS is also available
+    -l
+    --language
  
 # Removes Home component
 react component remove Home

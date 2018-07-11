@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HOC template test suite should match stateful HOC template snapshot for JS language 1`] = `
+"import React from 'react';
+
+export class REACT__COMPONENT__NAME extends React.Component {
+   constructor(props) {
+       super(props);
+   }
+
+   render() {
+       const Component = this.props.component;
+
+       return (
+           <Component {...this.props}></Component>
+       );
+   }
+};"
+`;
+
+exports[`HOC template test suite should match stateful HOC template snapshot for TS language 1`] = `
+"import React from 'react';
+
+export class REACT__COMPONENT__NAME extends React.Component {
+   constructor(props) {
+       super(props);
+   }
+
+   render() {
+       const Component = this.props.component;
+
+       return (
+           <Component {...this.props}></Component>
+       );
+   }
+};"
+`;
+
+exports[`HOC template test suite should match stateless HOC template snapshot for JS language 1`] = `
+"import React from 'react';
+
+export class REACT__COMPONENT__NAME extends React.Component {
+   constructor(props) {
+       super(props);
+   }
+
+   render() {
+       const Component = this.props.component;
+
+       return (
+           <Component {...this.props}></Component>
+       );
+   }
+};"
+`;
+
+exports[`HOC template test suite should match stateless HOC template snapshot for TS language 1`] = `
+"import React from 'react';
+
+export class REACT__COMPONENT__NAME extends React.Component {
+   constructor(props) {
+       super(props);
+   }
+
+   render() {
+       const Component = this.props.component;
+
+       return (
+           <Component {...this.props}></Component>
+       );
+   }
+};"
+`;

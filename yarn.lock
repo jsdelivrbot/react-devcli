@@ -41,10 +41,6 @@
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@types/find/-/find-0.2.0.tgz#a3c693bbd048a5e9e7cf0d94843fd556fef9baff"
 
-"@types/jasmine@^2.8.8":
-  version "2.8.8"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.8.tgz#bf53a7d193ea8b03867a38bfdb4fbb0e0bf066c9"
-
 "@types/jest@^23.1.5":
   version "23.1.5"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.1.5.tgz#e31be003956e1fa8c860124d99bea9ae327ae37b"

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Store template test suite should match store template snapshot for JS language 1`] = `""`;
+
+exports[`Store template test suite should match store template snapshot for TS language 1`] = `""`;
