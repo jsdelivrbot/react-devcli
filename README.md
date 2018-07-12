@@ -609,11 +609,11 @@ module.exports = () => {
 | `templates.path`              | `string`                  | `project.path`/templates     | The templates location                                                                    |
 | `docs`                        | `object`                  | NONE                         | The docs configuration object                                                             |
 | `serve.port`                  | `number`                  | 3000                         | Specifies the port of the server, where the component will be served from                 |
-| `serve.theme`                 | `light \| dar`            | light                        | Specifies the theme of sandbox environment, where the component will be served            |
+| `serve.theme`                 | `light \| dark`           | light                        | Specifies the theme of sandbox environment, where the component will be served            |
 | `engines.language`            | `js \| ts`                | js                           | The main language of the project                                                          |
 | `engines.testing.framework`   | `jest \| mocha \| jasmine`| jest                         | The engines.testing configuration object                                                  |
 | `engines.testing.configFile`  | `string`                  | jest.config.js               | The engines.testing configuration object                                                  |
-| `engines.linting.tool`        | `eslint | tslint`         | eslint                       | The engines.linting configuration object                                                  |
+| `engines.linting.tool`        | `eslint \| tslint`        | eslint                       | The engines.linting configuration object                                                  |
 | `engines.linting.configFile`  | `string`                  | .eslintrc                    | The engines.linting configuration object                                                  |
 
 ### Upcoming
