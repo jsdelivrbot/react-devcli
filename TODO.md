@@ -10,3 +10,5 @@
 8. Try to simplify the big switch statement from index.ts
 9. Get rid of as many index.ts as possible
 10. Remove all instances of react-devcli from source code and only keep it for declaration file
+11. Add integrations with Heroku, Surge, JsBin and JSFiddle
+12. Generate .babelrc and webpack.config.js from cli
