@@ -21,13 +21,13 @@ ETA: 25-30 July 2018 (First MVP)
 
 ### Markers
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/standard.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/standard.png" alt="react-devcli" width="80px"/>
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/deprecated.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/deprecated.png" alt="react-devcli" width="80px"/>
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/experimental.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/experimental.png" alt="react-devcli" width="80px"/>
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 - `STANDARD` - the feature is available and fully functional
 - `DEPRECATED` - the feature is available to use but is likely going to be removed as of next major version
@@ -50,7 +50,7 @@ npm install -g react-devcli
 
 #### Help
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/standard.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/standard.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Displays general description about each available command
@@ -64,7 +64,7 @@ react [COMMAND] [SUBCOMMAND] --help
 
 ### Initialize
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Initialize react-devcli
@@ -85,7 +85,7 @@ react new app
 
 ### Router
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Creates application router
@@ -135,7 +135,7 @@ react router rm HomePage
 
 ### Components
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Creates Home component
@@ -215,7 +215,7 @@ react component serve Home
 
 ### Store
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Creates application store
@@ -257,7 +257,7 @@ react store rm UsersReducer
 
 ### Reducers
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Creates the Users reducer
@@ -294,7 +294,7 @@ react reducer test Users
 
 #### Actions
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Creates the User actions
@@ -339,7 +339,7 @@ react action test User
 
 #### Selectors
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Creates the AuthenticatedUser selector
@@ -381,7 +381,7 @@ react selector test User
 
 #### Context
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Creates ThemeContext context
@@ -403,7 +403,7 @@ react context lint ThemeContext
 
 #### Command
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Creates new custom HelloWorld command
@@ -431,7 +431,7 @@ react command test HelloWorld
 
 #### Docs
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Statically serves all documented components
@@ -452,7 +452,7 @@ react docs rm Home
 
 #### Test
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Runs test on all application
@@ -478,7 +478,7 @@ react test run Home
 
 #### Lint
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Lints the whole project
@@ -492,7 +492,7 @@ react lint
 
 #### Publishing
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="80px"/>
 
 ```bash
 # Logs in into the specified provider's account
