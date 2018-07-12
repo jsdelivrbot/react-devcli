@@ -583,7 +583,7 @@ module.exports = () => {
 ### Configuration table
 
 | KEY                           | TYPE                      | DEFAULT                      | DESCRIPTION                                                                               |
-|:----------------------------- |---------------------------|:-----------------------------|:------------------------------------------------------------------------------------------|
+|:----------------------------- |:--------------------------|:-----------------------------|:------------------------------------------------------------------------------------------|
 | `project.path`                | `string`                  | `process.cwd()`              | The path of the developing project                                                        |
 | `router.path`                 | `string`                  | `process.cwd()`              | The path of the application router                                                        |
 | `components.path`             | `string`                  | `process.cwd()`/components   | The components path (location)                                                            |
