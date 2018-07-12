@@ -470,6 +470,8 @@ react lint
 
 #### Help
 
+`STANDARD`
+
 ```bash
 # Displays general description about each available command
 react --help
