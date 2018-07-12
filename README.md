@@ -21,10 +21,18 @@ ETA: 25-30 July 2018 (First MVP)
 
 ### Markers
 
-- `DRAFT` - the feature is under development and is subject to change or not even working
-- `DEPRECATED` - the feature is available to use but is likely going to be removed as of next major version
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/standard.png" alt="react-devcli" width="60px"/>
+
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/deprecated.png" alt="react-devcli" width="60px"/>
+
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/experimental.png" alt="react-devcli" width="60px"/>
+
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
+
 - `STANDARD` - the feature is available and fully functional
+- `DEPRECATED` - the feature is available to use but is likely going to be removed as of next major version
 - `EXPERIMENTAL` - the feature is available and fully functional, but experimental which is subject to change in minor versions
+- `DRAFT` - the feature is under development and is subject to change or not even working
 
 <br/><br/>
 
@@ -40,9 +48,23 @@ npm install -g react-devcli
 
 <br/><br/>
 
+#### Help
+
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/standard.png" alt="react-devcli" width="60px"/>
+
+```bash
+# Displays general description about each available command
+react --help
+ 
+# Displays detailed information about a specific command and available flags
+react [COMMAND] [SUBCOMMAND] --help
+```
+
+<br/><br/>
+
 ### Initialize
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Initialize react-devcli
@@ -63,7 +85,7 @@ react new app
 
 ### Router
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Creates application router
@@ -113,7 +135,7 @@ react router rm HomePage
 
 ### Components
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Creates Home component
@@ -193,7 +215,7 @@ react component serve Home
 
 ### Store
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Creates application store
@@ -235,7 +257,7 @@ react store rm UsersReducer
 
 ### Reducers
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Creates the Users reducer
@@ -272,7 +294,7 @@ react reducer test Users
 
 #### Actions
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Creates the User actions
@@ -317,7 +339,7 @@ react action test User
 
 #### Selectors
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Creates the AuthenticatedUser selector
@@ -359,7 +381,7 @@ react selector test User
 
 #### Context
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Creates ThemeContext context
@@ -381,7 +403,7 @@ react context lint ThemeContext
 
 #### Command
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Creates new custom HelloWorld command
@@ -409,7 +431,7 @@ react command test HelloWorld
 
 #### Docs
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Statically serves all documented components
@@ -430,7 +452,7 @@ react docs rm Home
 
 #### Test
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Runs test on all application
@@ -456,7 +478,7 @@ react test run Home
 
 #### Lint
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Lints the whole project
@@ -468,23 +490,9 @@ react lint
 
 <br/><br/>
 
-#### Help
-
-`STANDARD`
-
-```bash
-# Displays general description about each available command
-react --help
- 
-# Displays detailed information about a specific command and available flags
-react [COMMAND] [SUBCOMMAND] --help
-```
-
-<br/><br/>
-
 #### Publishing
 
-`DRAFT`
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/59f4748d/markers/draft.png" alt="react-devcli" width="60px"/>
 
 ```bash
 # Logs in into the specified provider's account
@@ -584,39 +592,39 @@ module.exports = () => {
 
 ### Configuration table
 
-| KEY                           | TYPE                      | DEFAULT                      | DESCRIPTION                                                                               |
-|:----------------------------- |:--------------------------|:-----------------------------|:------------------------------------------------------------------------------------------|
-| `project.path`                | `string`                  | `process.cwd()`              | The path of the developing project                                                        |
-| `router.path`                 | `string`                  | `process.cwd()`              | The path of the application router                                                        |
-| `components.path`             | `string`                  | `process.cwd()`/components   | The components path (location)                                                            |
-| `components.propTypes`        | `boolean`                 | true                         | Specify wether or not to generate propTypes for component                                 |
-| `components.scssFile`         | `boolean`                 | true                         | Specify wether or not to create scss file for created component                           |
-| `components.index`            | `boolean`                 | true                         | Specify wether or not component should be reexported from index file                      |
-| `components.extension`        | `jsx \| tsx`              | jsx                          | Specify the extension of the component, desirebly jsx or tsx, over js                     |
-| `components.case`             | `pascal \| camel \| dot`  | pascal                       | Specify what should be the case when naming a component                                   |
-| `store.path`                  | `string`                  | `process.cwd()`              | The path of the application store                                                         |
-| `reducers.path`               | `string`                  | `process.cwd()`/reducers     | The reducers location or componentBased, that will place it next to the component         |  
-| `reducers.componentBased`     | `boolean`                 | true                         | Specifies whether or not the reducers should be placed next to the component              |  
-| `actions.path`                | `string`                  | `process.cwd()`/actions      | The actions location or componentBased that will place it next to the component           |
-| `actions.componentBased`      | `boolean`                 | true                         | Specifies whether or not the actions should be placed next to the component               |
-| `actions.separateTypes`       | `boolean`                 | true                         | Create separate file for action types (constants)                                         |
-| `actions.index`               | `boolean`                 | true                         | Create index file and reexport actions file from it                                       |
-| `selectors.path`              | `string`                  | `process.cwd()`/selectors    | The selectors location or componentBased that will place it next to the component         |
-| `selectors.componentBased`    | `boolean`                 | true                         | Specifies whether or not the selectors should be placed next to the component             |
-| `selectors.onePerFile`        | `boolean`                 | false                        | Specifies whether or not the selectors should be created in individual files              |
-| `selectors.index`             | `boolean`                 | true                         | Specifies whether or not the selectors should be reexported from index file               |
-| `tests.path`                  | `object`                  | `project.path`/__tests__     | The test files location                                                                   |
-| `tests.componentBased`        | `boolean`                 | true                         | Specifies whether or not the test files should be created alongside components            |
-| `commands.path`               | `atring`                  | `project.path`/commands      | The custom commands files location                                                        |
-| `templates.path`              | `string`                  | `project.path`/templates     | The templates location                                                                    |
-| `docs`                        | `object`                  | NONE                         | The docs configuration object                                                             |
-| `serve.port`                  | `number`                  | 3000                         | Specifies the port of the server, where the component will be served from                 |
-| `serve.theme`                 | `light \| dark`           | light                        | Specifies the theme of sandbox environment, where the component will be served            |
-| `engines.language`            | `js \| ts`                | js                           | The main language of the project                                                          |
-| `engines.testing.framework`   | `jest \| mocha \| jasmine`| jest                         | The engines.testing configuration object                                                  |
-| `engines.testing.configFile`  | `string`                  | jest.config.js               | The engines.testing configuration object                                                  |
-| `engines.linting.tool`        | `eslint \| tslint`        | eslint                       | The engines.linting configuration object                                                  |
-| `engines.linting.configFile`  | `string`                  | .eslintrc                    | The engines.linting configuration object                                                  |
+| KEY                           | TYPE                          | DEFAULT                      | DESCRIPTION                                                                               |
+|:----------------------------- |:------------------------------|:-----------------------------|:------------------------------------------------------------------------------------------|
+| `project.path`                | `string`                      | `process.cwd()`              | The path of the developing project                                                        |
+| `router.path`                 | `string`                      | `process.cwd()`              | The path of the application router                                                        |
+| `components.path`             | `string`                      | `process.cwd()`/components   | The components path (location)                                                            |
+| `components.propTypes`        | `boolean`                     | true                         | Specify wether or not to generate propTypes for component                                 |
+| `components.scssFile`         | `boolean`                     | true                         | Specify wether or not to create scss file for created component                           |
+| `components.index`            | `boolean`                     | true                         | Specify wether or not component should be reexported from index file                      |
+| `components.extension`        | `jsx` or `tsx`                | jsx                          | Specify the extension of the component, desirebly jsx or tsx, over js                     |
+| `components.case`             | `pascal` or `camel` or `dot`  | pascal                       | Specify what should be the case when naming a component                                   |
+| `store.path`                  | `string`                      | `process.cwd()`              | The path of the application store                                                         |
+| `reducers.path`               | `string`                      | `process.cwd()`/reducers     | The reducers location or componentBased, that will place it next to the component         |  
+| `reducers.componentBased`     | `boolean`                     | true                         | Specifies whether or not the reducers should be placed next to the component              |  
+| `actions.path`                | `string`                      | `process.cwd()`/actions      | The actions location or componentBased that will place it next to the component           |
+| `actions.componentBased`      | `boolean`                     | true                         | Specifies whether or not the actions should be placed next to the component               |
+| `actions.separateTypes`       | `boolean`                     | true                         | Create separate file for action types (constants)                                         |
+| `actions.index`               | `boolean`                     | true                         | Create index file and reexport actions file from it                                       |
+| `selectors.path`              | `string`                      | `process.cwd()`/selectors    | The selectors location or componentBased that will place it next to the component         |
+| `selectors.componentBased`    | `boolean`                     | true                         | Specifies whether or not the selectors should be placed next to the component             |
+| `selectors.onePerFile`        | `boolean`                     | false                        | Specifies whether or not the selectors should be created in individual files              |
+| `selectors.index`             | `boolean`                     | true                         | Specifies whether or not the selectors should be reexported from index file               |
+| `tests.path`                  | `object`                      | `project.path`/__tests__     | The test files location                                                                   |
+| `tests.componentBased`        | `boolean`                     | true                         | Specifies whether or not the test files should be created alongside components            |
+| `commands.path`               | `atring`                      | `project.path`/commands      | The custom commands files location                                                        |
+| `templates.path`              | `string`                      | `project.path`/templates     | The templates location                                                                    |
+| `docs`                        | `object`                      | NONE                         | The docs configuration object                                                             |
+| `serve.port`                  | `number`                      | 3000                         | Specifies the port of the server, where the component will be served from                 |
+| `serve.theme`                 | `light` or `dark`             | light                        | Specifies the theme of sandbox environment, where the component will be served            |
+| `engines.language`            | `js` or `ts`                  | js                           | The main language of the project                                                          |
+| `engines.testing.framework`   | `jest` or `mocha` or `jasmine`| jest                         | The engines.testing configuration object                                                  |
+| `engines.testing.configFile`  | `string`                      | jest.config.js               | The engines.testing configuration object                                                  |
+| `engines.linting.tool`        | `eslint` or `tslint`          | eslint                       | The engines.linting configuration object                                                  |
+| `engines.linting.configFile`  | `string`                      | .eslintrc                    | The engines.linting configuration object                                                  |
 
 ### Upcoming
 
