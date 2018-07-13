@@ -8,7 +8,7 @@
 
 <br/>
 
-Note: Current library is not functional and subject to change 
+Note: Current library is not functional and subject to change  
 ETA: 25-30 July 2018 (First MVP)
 
 <br/><br/>
