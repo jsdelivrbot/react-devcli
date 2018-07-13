@@ -27,7 +27,7 @@ const siteConfig = {
     // url: 'https://steevehook.github.io',
     baseUrl: '/',
     // baseUrl: '/react-devcli',
-    projectName: 'react-devcli',
+    projectName: 'react-devcli/',
     organizationName: 'steevehook',
 
     headerLinks: [
