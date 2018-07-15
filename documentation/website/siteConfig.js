@@ -25,7 +25,7 @@ const siteConfig = {
     tagline: '✨ Generate, test, document and share your components',
     url: 'https://your-docusaurus-test-site.com',
     // baseUrl: '/',
-    baseUrl: 'react-devcli',
+    baseUrl: 'react-devcli/',
     projectName: 'react-devcli',
     organizationName: 'steevehook',
 
