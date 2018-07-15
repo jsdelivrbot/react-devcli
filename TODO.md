@@ -12,3 +12,4 @@
 10. Remove all instances of react-devcli from source code and only keep it for declaration file
 11. Add integrations with Heroku, Surge, JsBin and JSFiddle
 12. Generate .babelrc and webpack.config.js from cli
+13. Add .env for docs
