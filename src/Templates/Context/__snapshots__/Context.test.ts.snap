@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Context template test suite should match context template snapshot for JS language 1`] = `""`;
-
-exports[`Context template test suite should match context template snapshot for TS language 1`] = `""`;

@@ -1,7 +1,0 @@
-node_modules/
-.vscode/
-.idea/
-coverage/
-.rpt2_cache/
-.DS_Store
-documentation/website/build/react-devcli-gh-pages

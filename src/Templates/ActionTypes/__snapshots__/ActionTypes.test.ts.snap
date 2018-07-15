@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`ActionTypes template test suite should match action types template snapshot for JS language 1`] = `""`;
-
-exports[`ActionTypes template test suite should match action types template snapshot for TS language 1`] = `""`;
