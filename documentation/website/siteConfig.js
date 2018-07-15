@@ -26,7 +26,7 @@ const siteConfig = {
     // url: 'https://your-docusaurus-test-site.com',
     url: 'https://steevehook.github.io',
     // baseUrl: '/',
-    baseUrl: '/react-devcli',
+    baseUrl: '/react-devcli/',
     projectName: 'react-devcli',
     organizationName: 'steevehook',
 
