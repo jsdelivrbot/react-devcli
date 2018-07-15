@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://github.com/steevehook/help.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/en/help.html" /> </url>
-<url> <loc>https://github.com/steevehook/index.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/en/index.html" /> </url>
-<url> <loc>https://github.com/steevehook/users.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/en/users.html" /> </url>
-<url> <loc>https://github.com/steevehook/blog/2017/10/24/new-version-1.0.0.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://github.com/steevehook/blog/2017/09/26/adding-rss.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://github.com/steevehook/blog/2017/09/25/testing-rss.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://github.com/steevehook/blog/2017/04/10/blog-post-two.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://github.com/steevehook/blog/2016/03/11/blog-post.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://github.com/steevehook/docs/doc1.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/docs/doc1.html" /> </url>
-<url> <loc>https://github.com/steevehook/docs/doc2.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/docs/doc2.html" /> </url>
-<url> <loc>https://github.com/steevehook/docs/doc3.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/docs/doc3.html" /> </url>
-<url> <loc>https://github.com/steevehook/docs/doc4.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/docs/doc4.html" /> </url>
-<url> <loc>https://github.com/steevehook/docs/doc5.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/docs/doc5.html" /> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/help.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/react-devcli/en/help.html" /> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/index.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/react-devcli/en/index.html" /> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/users.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/react-devcli/en/users.html" /> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/blog/2017/10/24/new-version-1.0.0.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/blog/2017/09/26/adding-rss.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/blog/2017/09/25/testing-rss.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/blog/2017/04/10/blog-post-two.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/blog/2016/03/11/blog-post.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/docs/doc1.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/react-devcli/docs/doc1.html" /> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/docs/doc2.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/react-devcli/docs/doc2.html" /> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/docs/doc3.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/react-devcli/docs/doc3.html" /> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/docs/doc4.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/react-devcli/docs/doc4.html" /> </url>
+<url> <loc>https://github.com/steevehook/react-devcli/docs/doc5.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://github.com/steevehook/react-devcli/docs/doc5.html" /> </url>
 </urlset>
