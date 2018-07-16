@@ -1,8 +1,15 @@
 {
   "docs": {
-    "Getting Started": ["introduction", "installation"],
-    "Router": ["router"],
+    "Getting Started": [
+      "getting-started/installation",
+      "getting-started/introduction",
+      "getting-started/zero-config"
+    ],
+    "Router": [
+      "router/router"
+    ],
     "Components": [
+      "components/components",
       "components/stateless",
       "components/stateful",
       "components/page",
@@ -10,16 +17,23 @@
       "components/hoc",
       "components/connected"
     ],
-    "Store": ["store"],
-    "Reducers": ["reducers"],
-    "Actions": ["actions"],
-    "Selectors": ["selectors"],
-    "Context": ["context"],
-    "Custom Commands": ["custom-commands"],
-    "Docs": ["docs"],
-    "Test": ["test"],
-    "Lint": ["lint"],
-    "Advanced": ["configuration"]
+    "State Management": [
+      "state-management/store",
+      "state-management/reducers",
+      "state-management/actions",
+      "state-management/selectors",
+      "state-management/context"
+    ],
+    "Miscellaneous": [
+      "miscellaneous/docs",
+      "miscellaneous/test",
+      "miscellaneous/lint",
+      "miscellaneous/custom-commands"
+    ],
+    "Advanced": [
+      "advanced/configuration",
+      "advanced/application-structure"
+    ]
   },
   "docs-other": {
     "Index": ["index"]

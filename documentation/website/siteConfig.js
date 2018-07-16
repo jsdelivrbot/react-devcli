@@ -30,7 +30,7 @@ const siteConfig = {
     organizationName: 'steevehook',
 
     headerLinks: [
-        {doc: 'installation', label: 'Docs'},
+        {doc: 'getting-started/installation', label: 'Docs'},
         {doc: 'index', label: 'API'},
         { href: 'https://github.com/steevehook/react-devcli', label: 'GitHub' },
         {page: 'help', label: 'Help'},
