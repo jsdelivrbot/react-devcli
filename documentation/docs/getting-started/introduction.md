@@ -31,3 +31,20 @@ This tool is mainly inspired from how `Docker` CLI works and
 it is organized. Also it has capabilities which `Angular` and `Vue`
 CLIs provide and what's most importantly is as `UNIX` like
 as possible, in order to make it easy to follow along with.
+
+### Markers
+
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/active.svg" height="35px">
+
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/deprecated.svg" height="35px">
+
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/experimental.svg" height="35px">
+
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+
+<br/><br/>
+
+- `STANDARD` - the feature is available in the current release and is fully functional
+- `DEPRECATED` - the feature is available to use but is likely going to be removed as of next major version
+- `EXPERIMENTAL` - the feature is available and fully functional, but experimental which is subject to change in minor versions
+- `DRAFT` - the feature is under development and is subject to change or not even working

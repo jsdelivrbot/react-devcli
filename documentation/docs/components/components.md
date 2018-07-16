@@ -3,6 +3,9 @@ title: Components
 sidebar_label: Components
 ---
 
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<br/>
+
 Creates `Home` component in the specified location from `react.config.js`
 
 ```bash
@@ -54,6 +57,9 @@ react component mk Home
 
 <br/>
 
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<br/>
+
 Removes `Home` component
 
 ```bash
@@ -69,6 +75,9 @@ react component rm Home
 
 <br/>
 
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<br/>
+
 Lints `Home` component
 
 ```bash
@@ -80,12 +89,18 @@ react component lint Home
 
 <br/>
 
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<br/>
+
 Runs tests for `Home` component
 
 ```bash
 react component test Home
 ```
 
+<br/>
+
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Serves `Home` component inside a new browser tab
