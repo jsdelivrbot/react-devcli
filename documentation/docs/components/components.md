@@ -3,47 +3,50 @@ title: Components
 sidebar_label: Components
 ---
 
-Creates Home component in the specified location from `react.config.js`
+Creates `Home` component in the specified location from `react.config.js`
 
 ```bash
 react component make Home
 react component mk Home
-    # Create stateless functional component
+    # Creates stateless functional component
     --stateless
   
-    # Create stateful functional component
+    # Creates stateful class component
     --stateful
   
-    # Create stateful component without constructor
+    # Creates stateful component without constructor
     --no-constructor
 
-    # Create a Container component
+    # Creates component without prop types
+    --no-prop-types
+
+    # Creates a Container component
     --container
   
     # Create connected to store component
     --connected
   
-    # Create wrapper page component, usually for a route
+    # Creates wrapper page component, usually for a route
     -p
     --page
   
-    # Create a Higher Order Component
+    # Creates a Higher Order Component
     -h
     --hoc
   
-    # Create reducer alongside component
+    # Creates reducer alongside component
     -r
     --reducer
   
-    # Create test alongside component
+    # Creates test alongside component
     -t
     --test
   
-    # Create markdown doc alongside component
+    # Creates markdown doc alongside component
     -d
     --doc
   
-    # Specify language for template
+    # Specifies language for template
     # By default is JS, but TS is also available
     -l
     --language
@@ -51,7 +54,7 @@ react component mk Home
 
 <br/>
 
-Removes Home component
+Removes `Home` component
 
 ```bash
 react component remove Home
@@ -66,7 +69,7 @@ react component rm Home
 
 <br/>
 
-Lints Home component
+Lints `Home` component
 
 ```bash
 react component lint Home
@@ -77,7 +80,7 @@ react component lint Home
 
 <br/>
 
-Runs tests for Home component
+Runs tests for `Home` component
 
 ```bash
 react component test Home
@@ -85,7 +88,7 @@ react component test Home
 
 <br/>
 
-Serves Home component inside a new browser tab
+Serves `Home` component inside a new browser tab
 
 ```bash
 react component serve Home

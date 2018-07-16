@@ -21,7 +21,10 @@ This allows the developers to focus on really building UI and not care so much
 how to structure the application, copy and paste code around leaving dead
 code from place to place or struggling to understand other
 developer's code due to lack of documentation, or carrying the burden
-of not being able to share your work without too much effort
+of not being able to share your work without too much effort.
+
+The library itself also carries the most popular patterns used in React.js
+by the community so you get up and running as quick as possible
 
 ### Credits
 This tool is mainly inspired from how `Docker` CLI works and
