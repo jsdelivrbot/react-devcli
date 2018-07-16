@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
     title: 'React Dev CLI',
-    tagline: '✨ Generate, test, document and share your components',
+    tagline: '🗡 Generate, test, document and share your components',
     url: 'https://steevehook.github.io',
     baseUrl: '/',
     // baseUrl: '/react-devcli/',
@@ -30,8 +30,8 @@ const siteConfig = {
     organizationName: 'steevehook',
 
     headerLinks: [
-        {doc: 'doc1', label: 'Docs'},
-        {doc: 'doc4', label: 'API'},
+        {doc: 'installation', label: 'Docs'},
+        {doc: 'index', label: 'API'},
         { href: 'https://github.com/steevehook/react-devcli', label: 'GitHub' },
         {page: 'help', label: 'Help'},
         {blog: true, label: 'Blog'},

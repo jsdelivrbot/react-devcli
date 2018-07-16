@@ -92,7 +92,7 @@ react new app
 ```bash
 # Creates application router
 react router make
-react component mk
+react router mk
     # Specifies a custom name for app router, by default is AppRouter
     -n
     --name
@@ -151,9 +151,11 @@ react component mk Home
   
     # Create stateful component without constructor
     --no-constructor
+
+    # Create a Container component
+    --container
   
     # Create connected to store component
-    -c
     --connected
   
     # Create wrapper page component, usually for a route
