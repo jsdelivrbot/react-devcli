@@ -1,6 +1,6 @@
 ---
 title: Page Components
-sidebar_label: Page Components
+sidebar_label: Page
 ---
 
 Page components are nothing else but `stateless functional` components which are just
@@ -11,6 +11,9 @@ It is a good practice to use Page components when working with `React Router`, b
 it's easier to distinguish between regular components and components which wrap the
 presentation layer when accessing a route.
 
+<br/>
+
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Creates page component `Home`

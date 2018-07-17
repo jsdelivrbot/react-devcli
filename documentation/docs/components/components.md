@@ -3,6 +3,20 @@ title: Components
 sidebar_label: Components
 ---
 
+Components are the core `building blocks` of React.js library
+and it's how we `separate` and `chunk` our interfaces into `small`
+`reusable` pieces of code
+
+Since `components` is the only thing an `interface` consists of and is the
+core utility React gives us, we have different `types of components`
+based on different purposes.
+
+In general there are 2 types of components: `presentational` and
+`behavioral`, but in practice there are multiple patterns which
+work well with components.
+
+<br/>
+
 <img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
@@ -36,6 +50,9 @@ react component mk Home
     # Creates a Higher Order Component
     -h
     --hoc
+    
+    # Creates a component which uses render-props technique
+    --render-props
   
     # Creates reducer alongside component
     -r

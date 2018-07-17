@@ -15,7 +15,8 @@
       "components/page",
       "components/container",
       "components/hoc",
-      "components/connected"
+      "components/connected",
+      "components/render-props"
     ],
     "State Management": [
       "state-management/store",
@@ -28,7 +29,8 @@
       "miscellaneous/docs",
       "miscellaneous/test",
       "miscellaneous/lint",
-      "miscellaneous/custom-commands"
+      "miscellaneous/custom-commands",
+      "miscellaneous/publishing"
     ],
     "Advanced": [
       "advanced/configuration",

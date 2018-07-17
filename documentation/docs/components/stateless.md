@@ -1,6 +1,6 @@
 ---
 title: Stateless Components
-sidebar_label: Stateless Components
+sidebar_label: Stateless
 ---
 
 Stateless components are components which hold no logic, yet they know how things
@@ -11,6 +11,9 @@ which `don't` really deal with state and `businesss logic`, yet they just make u
 and need `no` access to component `lifecycle methods`, which are only accessible when using class
 declaration
 
+<br/>
+
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Creates functional stateless component `Home`

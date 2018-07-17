@@ -1,6 +1,6 @@
 ---
 title: Container Components
-sidebar_label: Container Components
+sidebar_label: Container
 ---
 
 Container components are components which wrap other presentation components aka `stateless function`
@@ -14,10 +14,13 @@ component.
 In general HOC receives a component as argument whereas container component
 can contain different type of children and decorate them just like in case of HOC.
 
+<br/>
+
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<br/>
+
 Automatically adds `Container` prefix at the end of filename)
 or other prefix if specified in `react.config.js`
-
-<br/>
 
 Creates container component
 

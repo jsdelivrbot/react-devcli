@@ -36,13 +36,20 @@ as possible, in order to make it easy to follow along with.
 
 <img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/active.svg" height="35px">
 
+<br/><br/>
+
 <img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/deprecated.svg" height="35px">
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/experimental.svg" height="35px">
+<br/><br/>
+
+<img align="left" 
+src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/experimental.svg" height="35px">
+
+<br/><br/>
 
 <img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
 
-<br/><br/>
+<br/><br/><br/>
 
 - `STANDARD` - the feature is available in the current release and is fully functional
 - `DEPRECATED` - the feature is available to use but is likely going to be removed as of next major version

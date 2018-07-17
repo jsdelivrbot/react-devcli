@@ -1,6 +1,6 @@
 ---
 title: Stateful Components
-sidebar_label: Stateful Components
+sidebar_label: Stateful
 ---
 
 Stateful components are components which manage their own state and/or
@@ -9,6 +9,9 @@ make use of lifecycle methods, which usually implies change of state or some sid
 It's useful to create `stateful` components when dealing with either `lifecycle methods` which usually imply `state management`, or when component itself holds `business logic` and/or it's own `state`, which need to be managed. However is highly recommended to use a `container` component or
 `HOC` to make logic reusable, if it's the case of course.
 
+<br/>
+
+<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Creates stateful class component `Home`
