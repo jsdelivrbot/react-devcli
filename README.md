@@ -4,7 +4,7 @@
 
 #### Library size: 16KB
 
-<img src="https://cdn.rawgit.com/steevehook/react-devcli/2fcb7fa0/icons/logo.svg" alt="react-devcli" height="80px"/>
+<img src="https://cdn.rawgit.com/steevehook/react-devcli/e85b3e5b/icons/logo-long.svg" alt="react-devcli" height="80px"/>
 
 <br/><br/>
 
@@ -35,13 +35,6 @@ npm install -g react-devcli
 
 For more information check out the
 [Docs](https://react-devcli.netlify.com/)
-
-### Upcoming
-
-- Add integrations with JSBin, JSFiddle, CodeSandbox, Surge and Heroku
-- Add Sandbox for testing React components
-- Add sharing possibility straight from sandbox
-- Add possibility to upload docs for component somewhere
 
 ### CHANGELOG
 

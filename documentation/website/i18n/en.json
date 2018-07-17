@@ -42,6 +42,12 @@
     "Publishing": "Publishing",
     "miscellaneous/test": "Test",
     "Test": "Test",
+    "project/changelog": "Change Log",
+    "Change Log": "Change Log",
+    "project/proposals": "Proposals",
+    "Proposals": "Proposals",
+    "project/upcoming": "Upcoming",
+    "Upcoming": "Upcoming",
     "router/router": "Router",
     "Router": "Router",
     "state-management/actions": "Actions",
@@ -61,7 +67,8 @@
     "Getting Started": "Getting Started",
     "State Management": "State Management",
     "Miscellaneous": "Miscellaneous",
-    "Advanced": "Advanced"
+    "Advanced": "Advanced",
+    "Project": "Project"
   },
   "pages-strings": {
     "Help Translate|recruit community translators for your project": "Help Translate",

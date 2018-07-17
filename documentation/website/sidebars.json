@@ -35,6 +35,11 @@
     "Advanced": [
       "advanced/configuration",
       "advanced/application-structure"
+    ],
+    "Project": [
+      "project/upcoming",
+      "project/proposals",
+      "project/changelog"
     ]
   },
   "docs-other": {
