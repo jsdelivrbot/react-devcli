@@ -28,19 +28,19 @@ class Footer extends React.Component {
                     </a>
                     <div>
                         <h5>Docs</h5>
-                        <a href={this.docUrl('getting-started/installation.html', this.props.language)}>
+                        <a href={this.docUrl('getting-started/installation.html')}>
                             Get Started
                         </a>
-                        <a href={this.docUrl('components/components.html', this.props.language)}>
+                        <a href={this.docUrl('components/components.html')}>
                             Boilerplate
                         </a>
-                        <a href={this.docUrl('miscellaneous/test.html', this.props.language)}>
+                        <a href={this.docUrl('miscellaneous/test.html')}>
                             Testing
                         </a>
-                        <a href={this.docUrl('getting-started/introduction.html', this.props.language)}>
+                        <a href={this.docUrl('getting-started/introduction.html')}>
                             Documentation
                         </a>
-                        <a href={this.docUrl('miscellaneous/publishing.html', this.props.language)}>
+                        <a href={this.docUrl('miscellaneous/publishing.html')}>
                             Sharing
                         </a>
                     </div>

@@ -54,6 +54,8 @@
     "Actions": "Actions",
     "state-management/context": "Context",
     "Context": "Context",
+    "state-management/mobx": "MobX",
+    "MobX": "MobX",
     "state-management/reducers": "Reducers",
     "Reducers": "Reducers",
     "state-management/selectors": "Selectors",

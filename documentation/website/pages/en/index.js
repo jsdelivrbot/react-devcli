@@ -195,7 +195,10 @@ const Description = props => (
         <Block background="light">
             {[
                 {
-                    content: 'This is another description of how this project is useful ✅',
+                    content: 'Copy pasting has always been cumbersome and time consuming, especially ' +
+                    'when projects require lots of configuration. Stop copy pasting code around and make ' +
+                    'use of automated code generation, which speeds up development time and lets you focus ' +
+                    ' on pure business logic. ✅',
                     image: imgUrl('learn-how/zero-config.png'),
                     imageAlign: 'right',
                     title: 'Boilerplate generation',
@@ -206,7 +209,11 @@ const Description = props => (
         <Block background="light">
             {[
                 {
-                    content: 'This is another description of how this project is useful ✅',
+                    content: 'Test your components in your favorite testing framework in isolation ' +
+                    'and make sure they work in any' +
+                    ' environment and also take advantage of a nice local sandbox designed to test' +
+                    ' your components right from CLI. This will allow more maintainable and 🌟' +
+                    ' less breakable components. ✅',
                     image: imgUrl('learn-how/zero-config.png'),
                     imageAlign: 'left',
                     title: 'Test in isolation',
@@ -217,8 +224,11 @@ const Description = props => (
         <Block background="light">
             {[
                 {
-                    content: 'This is another description of how this project is useful ✅',
-                    image: imgUrl('learn-how/zero-config.png'),
+                    content: 'Do not waste your time anymore, trying to understand what a component does ' +
+                    'or how to use it properly. Make your life and other developers happier by documenting ' +
+                    'your components out of the box. Document your React components using ' +
+                    '[Docz](https://www.docz.site/) documentation tool ✅',
+                    image: imgUrl('docz.svg'),
                     imageAlign: 'right',
                     title: 'Document components',
                 },
@@ -228,7 +238,9 @@ const Description = props => (
         <Block background="light">
             {[
                 {
-                    content: 'This is another description of how this project is useful ✅',
+                    content: 'Allow other developers to see your work and use it eventually. ' +
+                    'There\'s, nothing better than reusing components without reinventing the wheel.' +
+                    ' You get what you give. ✅',
                     image: imgUrl('learn-how/zero-config.png'),
                     imageAlign: 'left',
                     title: 'Share components',

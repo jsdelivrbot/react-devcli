@@ -25,7 +25,12 @@ react store make
 react store mk
     # Specify a custom name for the store, by default is AppStore
     -n
-    --name  
+    --name
+    
+    # Specify the name of store provider.
+    # By default the store provider is Redux
+    -p
+    --provider
 ```
 
 <br/>

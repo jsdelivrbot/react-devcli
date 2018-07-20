@@ -20,6 +20,7 @@
     ],
     "State Management": [
       "state-management/store",
+      "state-management/mobx",
       "state-management/reducers",
       "state-management/actions",
       "state-management/selectors",
