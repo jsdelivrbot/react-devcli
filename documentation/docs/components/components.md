@@ -17,7 +17,7 @@ work well with components.
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Creates `Home` component in the specified location from `react.config.js`
@@ -74,7 +74,7 @@ react component mk Home
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Removes `Home` component
@@ -92,7 +92,7 @@ react component rm Home
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Lints `Home` component
@@ -106,7 +106,7 @@ react component lint Home
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Runs tests for `Home` component
@@ -117,7 +117,7 @@ react component test Home
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Serves `Home` component inside a new browser tab

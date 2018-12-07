@@ -3,7 +3,7 @@ title: Selectors
 sidebar_label: Selectors
 ---
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Creates the AuthenticatedUser selector
@@ -26,7 +26,7 @@ react selector mk AuthenticatedUser
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Removes the AuthenticatedUser selector
@@ -44,7 +44,7 @@ react action rm AuthenticatedUser
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Lints the AuthenticatedUser selector
@@ -58,7 +58,7 @@ react selector lint AuthenticatedUser
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Runs the tests for the AuthenticatedUser selector

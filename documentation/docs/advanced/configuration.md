@@ -4,7 +4,7 @@ sidebar_label: Configuration
 ---
 
 <img align="left" 
-src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/experimental.svg" height="35px">
+src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/experimental.svg" height="35px">
 
 <br/>
 

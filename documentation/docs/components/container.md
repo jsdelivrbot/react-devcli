@@ -16,7 +16,7 @@ can contain different type of children and decorate them just like in case of HO
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Automatically adds `Container` prefix at the end of filename)

@@ -3,7 +3,7 @@ title: Reducers
 sidebar_label: Reducers
 ---
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Creates the Users reducer
@@ -21,7 +21,7 @@ react reducer mk Users
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Removes the Users reducer
@@ -39,7 +39,7 @@ react reducer rm Users
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Lints the Users reducer
@@ -53,7 +53,7 @@ react reducer lint Users
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Runs test for Users reducer

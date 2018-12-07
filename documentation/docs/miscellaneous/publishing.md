@@ -3,7 +3,7 @@ title: Publishing
 sidebar_label: Publishing
 ---
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Logs into the specified provider's account
@@ -18,7 +18,7 @@ react login:heroku
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Logs out from the specified provider's account
@@ -33,7 +33,7 @@ react logout:heroku
 
 <br/>
 
-<img align="left" src="https://cdn.rawgit.com/steevehook/react-devcli/5ef47b56/icons/markers/draft.svg" height="35px">
+<img align="left" src="https://cdn.jsdelivr.net/gh/steevehook/react-devcli@5ef47b56/icons/markers/draft.svg" height="35px">
 <br/>
 
 Publishes the React component to the specified provider
